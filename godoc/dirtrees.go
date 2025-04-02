@@ -7,9 +7,9 @@
 package godoc
 
 import (
-	"go/doc"
-	"go/parser"
-	"go/token"
+	"github.com/tinygo-org/tinygo/alt_go/doc"
+	"github.com/tinygo-org/tinygo/alt_go/parser"
+	"github.com/tinygo-org/tinygo/alt_go/token"
 	"log"
 	"os"
 	pathpkg "path"
@@ -17,7 +17,7 @@ import (
 	"sort"
 	"strings"
 
-	"golang.org/x/tools/godoc/vfs"
+	"github.com/tinygo-org/tinygo/x-tools/godoc/vfs"
 )
 
 // Conventional name for directories containing test data.

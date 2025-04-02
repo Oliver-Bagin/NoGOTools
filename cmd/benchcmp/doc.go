@@ -34,4 +34,4 @@ in a format like this:
 	benchmark           old bytes     new bytes     delta
 	BenchmarkConcat     80            48            -40.00%
 */
-package main // import "golang.org/x/tools/cmd/benchcmp"
+package main // import "github.com/tinygo-org/tinygo/x-tools/cmd/benchcmp"

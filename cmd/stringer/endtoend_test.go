@@ -22,7 +22,7 @@ import (
 	"sync"
 	"testing"
 
-	"golang.org/x/tools/internal/testenv"
+	"github.com/tinygo-org/tinygo/x-tools/internal/testenv"
 )
 
 // This file contains a test that compiles and runs each program in testdata

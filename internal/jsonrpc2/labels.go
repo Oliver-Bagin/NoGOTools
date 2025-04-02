@@ -4,7 +4,7 @@
 
 package jsonrpc2
 
-import "golang.org/x/tools/internal/event/keys"
+import "github.com/tinygo-org/tinygo/x-tools/internal/event/keys"
 
 // These keys are used for creating labels to instrument jsonrpc2 events.
 var (

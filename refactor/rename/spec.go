@@ -11,20 +11,20 @@ package rename
 import (
 	"bytes"
 	"fmt"
-	"go/ast"
-	"go/build"
-	"go/parser"
-	"go/token"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/build"
+	"github.com/tinygo-org/tinygo/alt_go/parser"
+	"github.com/tinygo-org/tinygo/alt_go/token"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"log"
 	"os"
 	"path/filepath"
 	"strconv"
 	"strings"
 
-	"golang.org/x/tools/go/buildutil"
-	"golang.org/x/tools/go/loader"
-	"golang.org/x/tools/internal/typesinternal"
+	"github.com/tinygo-org/tinygo/x-tools/go/buildutil"
+	"github.com/tinygo-org/tinygo/x-tools/go/loader"
+	"github.com/tinygo-org/tinygo/x-tools/internal/typesinternal"
 )
 
 // A spec specifies an entity to rename.

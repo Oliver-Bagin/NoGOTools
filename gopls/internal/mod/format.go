@@ -7,11 +7,11 @@ package mod
 import (
 	"context"
 
-	"golang.org/x/tools/gopls/internal/cache"
-	"golang.org/x/tools/gopls/internal/file"
-	"golang.org/x/tools/gopls/internal/protocol"
-	"golang.org/x/tools/internal/diff"
-	"golang.org/x/tools/internal/event"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/cache"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/file"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/protocol"
+	"github.com/tinygo-org/tinygo/x-tools/internal/diff"
+	"github.com/tinygo-org/tinygo/x-tools/internal/event"
 )
 
 func Format(ctx context.Context, snapshot *cache.Snapshot, fh file.Handle) ([]protocol.TextEdit, error) {

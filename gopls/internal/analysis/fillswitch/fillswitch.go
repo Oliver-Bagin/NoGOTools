@@ -7,12 +7,12 @@ package fillswitch
 import (
 	"bytes"
 	"fmt"
-	"go/ast"
-	"go/token"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/token"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 
-	"golang.org/x/tools/go/analysis"
-	"golang.org/x/tools/internal/typesinternal"
+	"github.com/tinygo-org/tinygo/x-tools/go/analysis"
+	"github.com/tinygo-org/tinygo/x-tools/internal/typesinternal"
 )
 
 // Diagnose computes diagnostics for switch statements with missing cases

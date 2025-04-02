@@ -13,14 +13,14 @@ import (
 	"strings"
 	"sync"
 
-	"golang.org/x/tools/gopls/internal/cache"
-	"golang.org/x/tools/gopls/internal/file"
-	"golang.org/x/tools/gopls/internal/golang"
-	"golang.org/x/tools/gopls/internal/label"
-	"golang.org/x/tools/gopls/internal/protocol"
-	"golang.org/x/tools/internal/event"
-	"golang.org/x/tools/internal/jsonrpc2"
-	"golang.org/x/tools/internal/xcontext"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/cache"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/file"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/golang"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/label"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/protocol"
+	"github.com/tinygo-org/tinygo/x-tools/internal/event"
+	"github.com/tinygo-org/tinygo/x-tools/internal/jsonrpc2"
+	"github.com/tinygo-org/tinygo/x-tools/internal/xcontext"
 )
 
 // ModificationSource identifies the origin of a change.

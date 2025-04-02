@@ -9,19 +9,19 @@ import (
 	"container/heap"
 	"context"
 	"fmt"
-	"go/parser"
-	"go/token"
+	"github.com/tinygo-org/tinygo/alt_go/parser"
+	"github.com/tinygo-org/tinygo/alt_go/token"
 	"math/bits"
 	"runtime"
 	"sync"
 	"time"
 
 	"golang.org/x/sync/errgroup"
-	"golang.org/x/tools/gopls/internal/cache/parsego"
-	"golang.org/x/tools/gopls/internal/file"
-	"golang.org/x/tools/gopls/internal/protocol"
-	"golang.org/x/tools/internal/memoize"
-	"golang.org/x/tools/internal/tokeninternal"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/cache/parsego"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/file"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/protocol"
+	"github.com/tinygo-org/tinygo/x-tools/internal/memoize"
+	"github.com/tinygo-org/tinygo/x-tools/internal/tokeninternal"
 )
 
 // This file contains an implementation of an LRU parse cache, that offsets the

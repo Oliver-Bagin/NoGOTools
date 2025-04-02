@@ -5,10 +5,10 @@
 package typeutil
 
 import (
-	"go/ast"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 
-	"golang.org/x/tools/internal/typeparams"
+	"github.com/tinygo-org/tinygo/x-tools/internal/typeparams"
 )
 
 // Callee returns the named target of a function call, if any:

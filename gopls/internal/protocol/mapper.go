@@ -59,14 +59,14 @@ package protocol
 import (
 	"bytes"
 	"fmt"
-	"go/ast"
-	"go/token"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/token"
 	"sort"
 	"sync"
 	"unicode/utf8"
 
-	"golang.org/x/tools/gopls/internal/util/bug"
-	"golang.org/x/tools/gopls/internal/util/safetoken"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/util/bug"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/util/safetoken"
 )
 
 // A Mapper wraps the content of a file and provides mapping

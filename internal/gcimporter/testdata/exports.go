@@ -8,7 +8,7 @@
 package exports
 
 import (
-	"go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
 )
 
 // Issue 3682: Correctly read dotted identifiers from export data.

@@ -7,14 +7,14 @@ package inline
 // This file defines various common helpers.
 
 import (
-	"go/ast"
-	"go/constant"
-	"go/token"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/constant"
+	"github.com/tinygo-org/tinygo/alt_go/token"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"reflect"
 	"strings"
 
-	"golang.org/x/tools/internal/typeparams"
+	"github.com/tinygo-org/tinygo/x-tools/internal/typeparams"
 )
 
 func is[T any](x any) bool {

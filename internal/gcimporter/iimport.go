@@ -11,17 +11,17 @@ import (
 	"bytes"
 	"encoding/binary"
 	"fmt"
-	"go/constant"
-	"go/token"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/constant"
+	"github.com/tinygo-org/tinygo/alt_go/token"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"io"
 	"math/big"
 	"sort"
 	"strings"
 
-	"golang.org/x/tools/go/types/objectpath"
-	"golang.org/x/tools/internal/aliases"
-	"golang.org/x/tools/internal/typesinternal"
+	"github.com/tinygo-org/tinygo/x-tools/go/types/objectpath"
+	"github.com/tinygo-org/tinygo/x-tools/internal/aliases"
+	"github.com/tinygo-org/tinygo/x-tools/internal/typesinternal"
 )
 
 type intReader struct {

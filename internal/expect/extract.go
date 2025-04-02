@@ -6,10 +6,10 @@ package expect
 
 import (
 	"fmt"
-	"go/ast"
-	"go/parser"
-	goscanner "go/scanner"
-	"go/token"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/parser"
+	goscanner "github.com/tinygo-org/tinygo/alt_go/scanner"
+	"github.com/tinygo-org/tinygo/alt_go/token"
 	"os"
 	"path/filepath"
 	"regexp"

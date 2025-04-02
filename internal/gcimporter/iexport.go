@@ -230,9 +230,9 @@ import (
 	"bytes"
 	"encoding/binary"
 	"fmt"
-	"go/constant"
-	"go/token"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/constant"
+	"github.com/tinygo-org/tinygo/alt_go/token"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"io"
 	"math/big"
 	"reflect"
@@ -240,8 +240,8 @@ import (
 	"strconv"
 	"strings"
 
-	"golang.org/x/tools/go/types/objectpath"
-	"golang.org/x/tools/internal/aliases"
+	"github.com/tinygo-org/tinygo/x-tools/go/types/objectpath"
+	"github.com/tinygo-org/tinygo/x-tools/internal/aliases"
 )
 
 // IExportShallow encodes "shallow" export data for the specified package.

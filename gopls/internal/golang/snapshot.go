@@ -8,10 +8,10 @@ import (
 	"context"
 	"fmt"
 
-	"golang.org/x/tools/gopls/internal/cache"
-	"golang.org/x/tools/gopls/internal/cache/metadata"
-	"golang.org/x/tools/gopls/internal/cache/parsego"
-	"golang.org/x/tools/gopls/internal/protocol"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/cache"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/cache/metadata"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/cache/parsego"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/protocol"
 )
 
 //go:fix inline

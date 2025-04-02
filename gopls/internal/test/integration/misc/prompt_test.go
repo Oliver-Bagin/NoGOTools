@@ -16,10 +16,10 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"golang.org/x/telemetry/counter"
 	"golang.org/x/telemetry/counter/countertest"
-	"golang.org/x/tools/gopls/internal/protocol"
-	"golang.org/x/tools/gopls/internal/protocol/command"
-	"golang.org/x/tools/gopls/internal/server"
-	. "golang.org/x/tools/gopls/internal/test/integration"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/protocol"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/protocol/command"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/server"
+	. "github.com/tinygo-org/tinygo/x-tools/gopls/internal/test/integration"
 )
 
 // Test prompt file in old and new formats are handled as expected.

@@ -6,14 +6,14 @@ package modernize
 
 import (
 	"fmt"
-	"go/ast"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"strings"
 
-	"golang.org/x/tools/go/analysis"
-	typeindexanalyzer "golang.org/x/tools/internal/analysisinternal/typeindex"
-	"golang.org/x/tools/internal/astutil/edge"
-	"golang.org/x/tools/internal/typesinternal/typeindex"
+	"github.com/tinygo-org/tinygo/x-tools/go/analysis"
+	typeindexanalyzer "github.com/tinygo-org/tinygo/x-tools/internal/analysisinternal/typeindex"
+	"github.com/tinygo-org/tinygo/x-tools/internal/astutil/edge"
+	"github.com/tinygo-org/tinygo/x-tools/internal/typesinternal/typeindex"
 )
 
 // The fmtappend function replaces []byte(fmt.Sprintf(...)) by

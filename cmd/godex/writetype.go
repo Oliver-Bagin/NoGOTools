@@ -13,7 +13,7 @@
 package main
 
 import (
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 )
 
 func (p *printer) writeType(this *types.Package, typ types.Type) {

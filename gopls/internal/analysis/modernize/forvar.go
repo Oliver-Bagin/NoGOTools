@@ -5,14 +5,14 @@
 package modernize
 
 import (
-	"go/ast"
-	"go/token"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/token"
 
-	"golang.org/x/tools/go/analysis"
-	"golang.org/x/tools/go/analysis/passes/inspect"
-	"golang.org/x/tools/go/ast/inspector"
-	"golang.org/x/tools/gopls/internal/util/bug"
-	"golang.org/x/tools/internal/analysisinternal"
+	"github.com/tinygo-org/tinygo/x-tools/go/analysis"
+	"github.com/tinygo-org/tinygo/x-tools/go/analysis/passes/inspect"
+	"github.com/tinygo-org/tinygo/x-tools/go/ast/inspector"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/util/bug"
+	"github.com/tinygo-org/tinygo/x-tools/internal/analysisinternal"
 )
 
 // forvar offers to fix unnecessary copying of a for variable

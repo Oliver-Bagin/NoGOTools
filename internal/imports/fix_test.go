@@ -8,7 +8,7 @@ import (
 	"context"
 	"flag"
 	"fmt"
-	"go/build"
+	"github.com/tinygo-org/tinygo/alt_go/build"
 	"log"
 	"os"
 	"path"
@@ -20,9 +20,9 @@ import (
 	"sync/atomic"
 	"testing"
 
-	"golang.org/x/tools/internal/gocommand"
-	"golang.org/x/tools/internal/packagestest"
-	"golang.org/x/tools/internal/stdlib"
+	"github.com/tinygo-org/tinygo/x-tools/internal/gocommand"
+	"github.com/tinygo-org/tinygo/x-tools/internal/packagestest"
+	"github.com/tinygo-org/tinygo/x-tools/internal/stdlib"
 )
 
 var testDebug = flag.Bool("debug", false, "enable debug output")
@@ -701,7 +701,7 @@ var _, _, _, _, _ = context.Background, bar.B, baz.B, buzz.B, snappy.ErrCorrupt
 
 import (
 	"fmt"                     // A
-	"go/ast"                  // B
+	"github.com/tinygo-org/tinygo/alt_go/ast"                  // B
 	_ "manypackages.com/packagec"    // C
 )
 
@@ -711,7 +711,7 @@ func main() { _, _ = fmt.Print, ast.Walk }
 
 import (
 	"fmt"    // A
-	"go/ast" // B
+	"github.com/tinygo-org/tinygo/alt_go/ast" // B
 
 	_ "manypackages.com/packagec" // C
 )
@@ -2100,7 +2100,7 @@ func TestImportPathToNameGoPathParse(t *testing.T) {
 		},
 	}.test(t, func(t *goimportTest) {
 		if strings.Contains(t.Name(), "GoPackages") {
-			t.Skip("go/packages does not ignore package main")
+			t.Skip("github.com/tinygo-org/tinygo/alt_go/packages does not ignore package main")
 		}
 		r, err := t.env.GetResolver()
 		if err != nil {

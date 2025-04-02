@@ -5,14 +5,14 @@
 package vta
 
 import (
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"iter"
 	"slices"
 
-	"golang.org/x/tools/go/callgraph/vta/internal/trie"
-	"golang.org/x/tools/go/ssa"
+	"github.com/tinygo-org/tinygo/x-tools/go/callgraph/vta/internal/trie"
+	"github.com/tinygo-org/tinygo/x-tools/go/ssa"
 
-	"golang.org/x/tools/go/types/typeutil"
+	"github.com/tinygo-org/tinygo/x-tools/go/types/typeutil"
 )
 
 // scc computes strongly connected components (SCCs) of `g` using the

@@ -6,8 +6,8 @@ package fillreturns
 
 import (
 	"errors"
-	"go/ast"
-	ast2 "go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	ast2 "github.com/tinygo-org/tinygo/alt_go/ast"
 	"io"
 	"net/http"
 	. "net/http"

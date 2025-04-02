@@ -6,15 +6,15 @@ package cache
 
 import (
 	"bytes"
-	"go/build"
-	"go/build/constraint"
-	"go/parser"
-	"go/token"
+	"github.com/tinygo-org/tinygo/alt_go/build"
+	"github.com/tinygo-org/tinygo/alt_go/build/constraint"
+	"github.com/tinygo-org/tinygo/alt_go/parser"
+	"github.com/tinygo-org/tinygo/alt_go/token"
 	"io"
 	"path/filepath"
 	"strings"
 
-	"golang.org/x/tools/gopls/internal/util/bug"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/util/bug"
 )
 
 type port struct{ GOOS, GOARCH string }

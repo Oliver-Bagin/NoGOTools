@@ -8,16 +8,16 @@ package nonewvars
 
 import (
 	_ "embed"
-	"go/ast"
-	"go/token"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/token"
 
-	"golang.org/x/tools/go/analysis"
-	"golang.org/x/tools/go/analysis/passes/inspect"
-	"golang.org/x/tools/go/ast/inspector"
-	"golang.org/x/tools/gopls/internal/util/moreiters"
-	"golang.org/x/tools/internal/analysisinternal"
-	"golang.org/x/tools/internal/astutil/cursor"
-	"golang.org/x/tools/internal/typesinternal"
+	"github.com/tinygo-org/tinygo/x-tools/go/analysis"
+	"github.com/tinygo-org/tinygo/x-tools/go/analysis/passes/inspect"
+	"github.com/tinygo-org/tinygo/x-tools/go/ast/inspector"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/util/moreiters"
+	"github.com/tinygo-org/tinygo/x-tools/internal/analysisinternal"
+	"github.com/tinygo-org/tinygo/x-tools/internal/astutil/cursor"
+	"github.com/tinygo-org/tinygo/x-tools/internal/typesinternal"
 )
 
 //go:embed doc.go

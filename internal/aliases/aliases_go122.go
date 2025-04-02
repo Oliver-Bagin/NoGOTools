@@ -5,10 +5,10 @@
 package aliases
 
 import (
-	"go/ast"
-	"go/parser"
-	"go/token"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/parser"
+	"github.com/tinygo-org/tinygo/alt_go/token"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 )
 
 // Rhs returns the type on the right-hand side of the alias declaration.

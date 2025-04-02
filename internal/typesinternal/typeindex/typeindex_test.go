@@ -7,16 +7,16 @@
 package typeindex_test
 
 import (
-	"go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
 	"slices"
 	"testing"
 
-	"golang.org/x/tools/go/ast/inspector"
-	"golang.org/x/tools/go/packages"
-	"golang.org/x/tools/go/types/typeutil"
-	"golang.org/x/tools/internal/astutil/cursor"
-	"golang.org/x/tools/internal/testenv"
-	"golang.org/x/tools/internal/typesinternal/typeindex"
+	"github.com/tinygo-org/tinygo/x-tools/go/ast/inspector"
+	"github.com/tinygo-org/tinygo/x-tools/go/packages"
+	"github.com/tinygo-org/tinygo/x-tools/go/types/typeutil"
+	"github.com/tinygo-org/tinygo/x-tools/internal/astutil/cursor"
+	"github.com/tinygo-org/tinygo/x-tools/internal/testenv"
+	"github.com/tinygo-org/tinygo/x-tools/internal/typesinternal/typeindex"
 )
 
 func TestIndex(t *testing.T) {

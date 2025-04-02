@@ -49,7 +49,7 @@ import (
 	"bytes"
 	"flag"
 	"fmt"
-	"go/format"
+	"github.com/tinygo-org/tinygo/alt_go/format"
 	"math"
 	"os"
 	"slices"

@@ -70,24 +70,24 @@
 //	PillAspirin // Aspirin
 //
 // to suppress it in the output.
-package main // import "golang.org/x/tools/cmd/stringer"
+package main // import "github.com/tinygo-org/tinygo/x-tools/cmd/stringer"
 
 import (
 	"bytes"
 	"flag"
 	"fmt"
-	"go/ast"
-	"go/constant"
-	"go/format"
-	"go/token"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/constant"
+	"github.com/tinygo-org/tinygo/alt_go/format"
+	"github.com/tinygo-org/tinygo/alt_go/token"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"log"
 	"os"
 	"path/filepath"
 	"sort"
 	"strings"
 
-	"golang.org/x/tools/go/packages"
+	"github.com/tinygo-org/tinygo/x-tools/go/packages"
 )
 
 var (
@@ -433,7 +433,7 @@ type Value struct {
 	// by Value.String.
 	value  uint64 // Will be converted to int64 when needed.
 	signed bool   // Whether the constant is a signed type.
-	str    string // The string representation given by the "go/constant" package.
+	str    string // The string representation given by the "github.com/tinygo-org/tinygo/alt_go/constant" package.
 }
 
 func (v *Value) String() string {
@@ -467,7 +467,7 @@ func (f *File) genDecl(node ast.Node) bool {
 	// Loop over the elements of the declaration. Each element is a ValueSpec:
 	// a list of names possibly followed by a type, possibly followed by values.
 	// If the type and value are both missing, we carry down the type (and value,
-	// but the "go/types" package takes care of that).
+	// but the "github.com/tinygo-org/tinygo/alt_go/types" package takes care of that).
 	for _, spec := range decl.Specs {
 		vspec := spec.(*ast.ValueSpec) // Guaranteed to succeed as this is CONST.
 		if vspec.Type == nil && len(vspec.Values) > 0 {

@@ -30,15 +30,15 @@ func TestReadPCLineTable(t *testing.T) {
 		{
 			name: "gopls",
 			info: Info{
-				Program:        "golang.org/x/tools/gopls",
+				Program:        "github.com/tinygo-org/tinygo/x-tools/gopls",
 				ProgramVersion: "v0.16.1",
 				GoVersion:      "go1.23.4",
 				GOOS:           "linux",
 				GOARCH:         "amd64",
 			},
-			wantSymbol: "golang.org/x/tools/gopls/internal/cmd.(*Application).Run",
+			wantSymbol: "github.com/tinygo-org/tinygo/x-tools/gopls/internal/cmd.(*Application).Run",
 			wantFileLine: FileLine{
-				file: "golang.org/x/tools/gopls/internal/cmd/cmd.go",
+				file: "github.com/tinygo-org/tinygo/x-tools/gopls/internal/cmd/cmd.go",
 				line: 230,
 			},
 		},
@@ -158,7 +158,7 @@ func TestUpdateIssues(t *testing.T) {
 		if cic.number != number {
 			t.Errorf("issue number: got %d, want %d", cic.number, number)
 		}
-		for _, want := range []string{"URL1", stack1, id1, "golang.org/x/tools/gopls@" + version} {
+		for _, want := range []string{"URL1", stack1, id1, "github.com/tinygo-org/tinygo/x-tools/gopls@" + version} {
 			if !strings.Contains(cic.comment, want) {
 				t.Errorf("missing %q in comment:\n%s", want, cic.comment)
 			}
@@ -173,7 +173,7 @@ func TestUpdateIssues(t *testing.T) {
 		}}
 
 		info := Info{
-			Program:        "golang.org/x/tools/gopls",
+			Program:        "github.com/tinygo-org/tinygo/x-tools/gopls",
 			ProgramVersion: "v0.16.1",
 		}
 		stacks := map[string]map[Info]int64{stack1: map[Info]int64{info: 3}}
@@ -214,7 +214,7 @@ func TestUpdateIssues(t *testing.T) {
 		}}
 		// New stack in a later version.
 		info := Info{
-			Program:        "golang.org/x/tools/gopls",
+			Program:        "github.com/tinygo-org/tinygo/x-tools/gopls",
 			ProgramVersion: "v0.17.0",
 		}
 		stacks := map[string]map[Info]int64{stack1: map[Info]int64{info: 3}}
@@ -270,7 +270,7 @@ func TestMarshalUpdateIssueFields(t *testing.T) {
 
 func TestShouldReopen(t *testing.T) {
 	const stack = "stack"
-	const gopls = "golang.org/x/tools/gopls"
+	const gopls = "github.com/tinygo-org/tinygo/x-tools/gopls"
 	goplsMilestone := &Milestone{Title: "gopls/v0.2.0"}
 	goMilestone := &Milestone{Title: "Go1.23"}
 

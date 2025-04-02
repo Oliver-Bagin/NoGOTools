@@ -7,9 +7,9 @@
 package main
 
 import (
-	"go/importer"
-	"go/token"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/importer"
+	"github.com/tinygo-org/tinygo/alt_go/token"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 )
 
 func init() {

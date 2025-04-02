@@ -9,8 +9,8 @@ import (
 	"context"
 	"flag"
 	"fmt"
-	"go/token"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/token"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"os"
 	"sort"
 	"strings"
@@ -18,20 +18,20 @@ import (
 	"testing"
 	"time"
 
-	"golang.org/x/tools/go/gcexportdata"
-	"golang.org/x/tools/go/packages"
-	"golang.org/x/tools/gopls/internal/cache/metadata"
-	"golang.org/x/tools/gopls/internal/cache/parsego"
-	"golang.org/x/tools/gopls/internal/cache/typerefs"
-	"golang.org/x/tools/gopls/internal/protocol"
-	"golang.org/x/tools/gopls/internal/util/astutil"
-	"golang.org/x/tools/internal/packagesinternal"
-	"golang.org/x/tools/internal/testenv"
+	"github.com/tinygo-org/tinygo/x-tools/go/gcexportdata"
+	"github.com/tinygo-org/tinygo/x-tools/go/packages"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/cache/metadata"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/cache/parsego"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/cache/typerefs"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/protocol"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/util/astutil"
+	"github.com/tinygo-org/tinygo/x-tools/internal/packagesinternal"
+	"github.com/tinygo-org/tinygo/x-tools/internal/testenv"
 )
 
 var (
 	dir    = flag.String("dir", "", "dir to run go/packages from")
-	query  = flag.String("query", "std", "go/packages load query to use for walkdecl tests")
+	query  = flag.String("query", "std", "github.com/tinygo-org/tinygo/alt_go/packages load query to use for walkdecl tests")
 	verify = flag.Bool("verify", true, "whether to verify reachable packages using export data (may be slow on large graphs)")
 )
 

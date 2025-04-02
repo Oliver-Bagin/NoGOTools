@@ -5,17 +5,17 @@
 package testfuncs
 
 import (
-	"go/ast"
-	"go/constant"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/constant"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"strings"
 	"unicode"
 	"unicode/utf8"
 
-	"golang.org/x/tools/gopls/internal/cache/parsego"
-	"golang.org/x/tools/gopls/internal/protocol"
-	"golang.org/x/tools/gopls/internal/util/frob"
-	"golang.org/x/tools/gopls/internal/util/safetoken"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/cache/parsego"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/protocol"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/util/frob"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/util/safetoken"
 )
 
 // An Index records the test set of a package.

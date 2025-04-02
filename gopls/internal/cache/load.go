@@ -9,7 +9,7 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"path/filepath"
 	"slices"
 	"sort"
@@ -17,18 +17,18 @@ import (
 	"sync/atomic"
 	"time"
 
-	"golang.org/x/tools/go/packages"
-	"golang.org/x/tools/gopls/internal/cache/metadata"
-	"golang.org/x/tools/gopls/internal/file"
-	"golang.org/x/tools/gopls/internal/label"
-	"golang.org/x/tools/gopls/internal/protocol"
-	"golang.org/x/tools/gopls/internal/util/bug"
-	"golang.org/x/tools/gopls/internal/util/immutable"
-	"golang.org/x/tools/gopls/internal/util/pathutil"
-	"golang.org/x/tools/internal/event"
-	"golang.org/x/tools/internal/packagesinternal"
-	"golang.org/x/tools/internal/typesinternal"
-	"golang.org/x/tools/internal/xcontext"
+	"github.com/tinygo-org/tinygo/x-tools/go/packages"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/cache/metadata"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/file"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/label"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/protocol"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/util/bug"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/util/immutable"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/util/pathutil"
+	"github.com/tinygo-org/tinygo/x-tools/internal/event"
+	"github.com/tinygo-org/tinygo/x-tools/internal/packagesinternal"
+	"github.com/tinygo-org/tinygo/x-tools/internal/typesinternal"
+	"github.com/tinygo-org/tinygo/x-tools/internal/xcontext"
 )
 
 var loadID uint64 // atomic identifier for loads
@@ -50,7 +50,7 @@ func (s *Snapshot) load(ctx context.Context, allowNetwork AllowNetwork, scopes .
 		return ctx.Err()
 	}
 	id := atomic.AddUint64(&loadID, 1)
-	eventName := fmt.Sprintf("go/packages.Load #%d", id) // unique name for logging
+	eventName := fmt.Sprintf("github.com/tinygo-org/tinygo/alt_go/packages.Load #%d", id) // unique name for logging
 
 	var query []string
 	var standalone bool // whether this is a load of a standalone file
@@ -169,15 +169,15 @@ func (s *Snapshot) load(ctx context.Context, allowNetwork AllowNetwork, scopes .
 		for _, pkg := range pkgs {
 			if pkg.ID == "command-line-arguments" {
 				if standalonePkg != nil {
-					return fmt.Errorf("go/packages returned multiple standalone packages")
+					return fmt.Errorf("github.com/tinygo-org/tinygo/alt_go/packages returned multiple standalone packages")
 				}
 				standalonePkg = pkg
 			} else if pkg.ForTest == "" && !strings.HasSuffix(pkg.ID, ".test") {
-				return fmt.Errorf("go/packages returned unexpected package %q for standalone file", pkg.ID)
+				return fmt.Errorf("github.com/tinygo-org/tinygo/alt_go/packages returned unexpected package %q for standalone file", pkg.ID)
 			}
 		}
 		if standalonePkg == nil {
-			return fmt.Errorf("go/packages failed to return non-test standalone package")
+			return fmt.Errorf("github.com/tinygo-org/tinygo/alt_go/packages failed to return non-test standalone package")
 		}
 		if len(standalonePkg.CompiledGoFiles) > 0 {
 			pkgs = []*packages.Package{standalonePkg}

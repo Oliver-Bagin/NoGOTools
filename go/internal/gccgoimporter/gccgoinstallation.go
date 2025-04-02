@@ -9,7 +9,7 @@ package gccgoimporter
 
 import (
 	"bufio"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"os"
 	"os/exec"
 	"path/filepath"

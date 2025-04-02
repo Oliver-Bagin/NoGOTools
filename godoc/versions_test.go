@@ -5,10 +5,10 @@
 package godoc
 
 import (
-	"go/build"
+	"github.com/tinygo-org/tinygo/alt_go/build"
 	"testing"
 
-	"golang.org/x/tools/internal/testenv"
+	"github.com/tinygo-org/tinygo/x-tools/internal/testenv"
 )
 
 func TestParseVersionRow(t *testing.T) {
@@ -67,7 +67,7 @@ func TestParseVersionRow(t *testing.T) {
 		},
 		{
 			// Function with type parameters.
-			// Taken from "go/src/api/go1.21.txt".
+			// Taken from "github.com/tinygo-org/tinygo/alt_go/src/api/go1.21.txt".
 			row: "pkg cmp, func Compare[$0 Ordered]($0, $0) int #59488",
 			want: versionedRow{
 				pkg:  "cmp",
@@ -78,7 +78,7 @@ func TestParseVersionRow(t *testing.T) {
 		{
 			// Function without type parameter but have "[" after
 			// "(" should have works as is.
-			// Taken from "go/src/api/go1.21.txt".
+			// Taken from "github.com/tinygo-org/tinygo/alt_go/src/api/go1.21.txt".
 			row: "pkg bytes, func ContainsFunc([]uint8, func(int32) bool) bool #54386",
 			want: versionedRow{
 				pkg:  "bytes",

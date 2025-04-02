@@ -5,7 +5,7 @@
 package astutil
 
 import (
-	"go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
 	"reflect"
 )
 

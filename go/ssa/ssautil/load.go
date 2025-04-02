@@ -7,12 +7,12 @@ package ssautil
 // This file defines utility functions for constructing programs in SSA form.
 
 import (
-	"go/ast"
-	"go/token"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/token"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 
-	"golang.org/x/tools/go/packages"
-	"golang.org/x/tools/go/ssa"
+	"github.com/tinygo-org/tinygo/x-tools/go/packages"
+	"github.com/tinygo-org/tinygo/x-tools/go/ssa"
 )
 
 // Packages creates an SSA program for a set of packages.

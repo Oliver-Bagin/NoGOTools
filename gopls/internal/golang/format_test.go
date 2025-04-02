@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"golang.org/x/tools/gopls/internal/test/compare"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/test/compare"
 )
 
 func TestImportPrefix(t *testing.T) {
@@ -29,7 +29,7 @@ func TestImportPrefix(t *testing.T) {
 			"package a\n\nimport (\n  \"fmt\"\n)\n//hi\n",
 		},
 		{`package a /*hi*/`, `package a /*hi*/`},
-		{"package main\r\n\r\nimport \"go/types\"\r\n\r\n/*\r\n\r\n */\r\n", "package main\r\n\r\nimport \"go/types\"\r\n\r\n/*\r\n\r\n */\r\n"},
+		{"package main\r\n\r\nimport \"github.com/tinygo-org/tinygo/alt_go/types\"\r\n\r\n/*\r\n\r\n */\r\n", "package main\r\n\r\nimport \"github.com/tinygo-org/tinygo/alt_go/types\"\r\n\r\n/*\r\n\r\n */\r\n"},
 		{"package x; import \"os\"; func f() {}\n\n", "package x; import \"os\""},
 		{"package x; func f() {fmt.Println()}\n\n", "package x"},
 	} {

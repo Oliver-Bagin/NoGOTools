@@ -6,8 +6,8 @@ package astutil
 
 import (
 	"fmt"
-	"go/ast"
-	"go/token"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/token"
 	"strconv"
 	"unicode/utf8"
 )

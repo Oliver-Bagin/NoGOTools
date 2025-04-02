@@ -9,7 +9,7 @@ package static
 import (
 	"bytes"
 	"fmt"
-	"go/format"
+	"github.com/tinygo-org/tinygo/alt_go/format"
 	"os"
 	"unicode"
 )

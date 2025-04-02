@@ -5,8 +5,8 @@
 package typesinternal
 
 import (
-	"go/ast"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"strconv"
 )
 

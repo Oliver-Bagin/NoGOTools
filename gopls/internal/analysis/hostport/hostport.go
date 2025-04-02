@@ -8,16 +8,16 @@ package hostport
 
 import (
 	"fmt"
-	"go/ast"
-	"go/constant"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/constant"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 
-	"golang.org/x/tools/go/analysis"
-	"golang.org/x/tools/go/analysis/passes/inspect"
-	"golang.org/x/tools/go/types/typeutil"
-	"golang.org/x/tools/gopls/internal/util/safetoken"
-	typeindexanalyzer "golang.org/x/tools/internal/analysisinternal/typeindex"
-	"golang.org/x/tools/internal/typesinternal/typeindex"
+	"github.com/tinygo-org/tinygo/x-tools/go/analysis"
+	"github.com/tinygo-org/tinygo/x-tools/go/analysis/passes/inspect"
+	"github.com/tinygo-org/tinygo/x-tools/go/types/typeutil"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/util/safetoken"
+	typeindexanalyzer "github.com/tinygo-org/tinygo/x-tools/internal/analysisinternal/typeindex"
+	"github.com/tinygo-org/tinygo/x-tools/internal/typesinternal/typeindex"
 )
 
 const Doc = `check format of addresses passed to net.Dial

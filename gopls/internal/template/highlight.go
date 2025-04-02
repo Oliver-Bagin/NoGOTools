@@ -9,9 +9,9 @@ import (
 	"fmt"
 	"regexp"
 
-	"golang.org/x/tools/gopls/internal/cache"
-	"golang.org/x/tools/gopls/internal/file"
-	"golang.org/x/tools/gopls/internal/protocol"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/cache"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/file"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/protocol"
 )
 
 func Highlight(ctx context.Context, snapshot *cache.Snapshot, fh file.Handle, loc protocol.Position) ([]protocol.DocumentHighlight, error) {

@@ -4,7 +4,7 @@
 
 package golang
 
-import "go/types"
+import "github.com/tinygo-org/tinygo/alt_go/types"
 
 // containsOrigin reports whether the provided object set contains an object
 // with the same origin as the provided obj (which may be a synthetic object

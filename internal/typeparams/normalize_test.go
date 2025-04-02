@@ -5,15 +5,15 @@
 package typeparams_test
 
 import (
-	"go/ast"
-	"go/parser"
-	"go/token"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/parser"
+	"github.com/tinygo-org/tinygo/alt_go/token"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"regexp"
 	"strings"
 	"testing"
 
-	. "golang.org/x/tools/internal/typeparams"
+	. "github.com/tinygo-org/tinygo/x-tools/internal/typeparams"
 )
 
 func TestStructuralTerms(t *testing.T) {

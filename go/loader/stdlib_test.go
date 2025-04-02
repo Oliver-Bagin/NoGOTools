@@ -11,10 +11,10 @@ package loader_test
 import (
 	"bytes"
 	"fmt"
-	"go/ast"
-	"go/build"
-	"go/token"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/build"
+	"github.com/tinygo-org/tinygo/alt_go/token"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"os"
 	"path/filepath"
 	"runtime"
@@ -22,9 +22,9 @@ import (
 	"testing"
 	"time"
 
-	"golang.org/x/tools/go/buildutil"
-	"golang.org/x/tools/go/loader"
-	"golang.org/x/tools/internal/testenv"
+	"github.com/tinygo-org/tinygo/x-tools/go/buildutil"
+	"github.com/tinygo-org/tinygo/x-tools/go/loader"
+	"github.com/tinygo-org/tinygo/x-tools/internal/testenv"
 )
 
 func TestStdlib(t *testing.T) {

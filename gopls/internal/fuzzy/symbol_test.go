@@ -5,13 +5,13 @@
 package fuzzy_test
 
 import (
-	"go/ast"
-	"go/token"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/token"
 	"sort"
 	"testing"
 
-	"golang.org/x/tools/go/packages"
-	. "golang.org/x/tools/gopls/internal/fuzzy"
+	"github.com/tinygo-org/tinygo/x-tools/go/packages"
+	. "github.com/tinygo-org/tinygo/x-tools/gopls/internal/fuzzy"
 )
 
 func TestSymbolMatchIndex(t *testing.T) {
@@ -158,7 +158,7 @@ func collectIdentifiers(tb testing.TB) []string {
 		Mode:  packages.NeedName | packages.NeedSyntax | packages.NeedFiles,
 		Tests: true,
 	}
-	pkgs, err := packages.Load(cfg, "golang.org/x/tools/...")
+	pkgs, err := packages.Load(cfg, "github.com/tinygo-org/tinygo/x-tools/...")
 	if err != nil {
 		tb.Fatal(err)
 	}

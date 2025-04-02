@@ -6,8 +6,8 @@ package rename
 
 import (
 	"fmt"
-	"go/build"
-	"go/token"
+	"github.com/tinygo-org/tinygo/alt_go/build"
+	"github.com/tinygo-org/tinygo/alt_go/token"
 	"io"
 	"path/filepath"
 	"reflect"
@@ -15,7 +15,7 @@ import (
 	"strings"
 	"testing"
 
-	"golang.org/x/tools/go/buildutil"
+	"github.com/tinygo-org/tinygo/x-tools/go/buildutil"
 )
 
 func TestErrors(t *testing.T) {

@@ -12,7 +12,7 @@ package interp
 // concurrent map access.
 
 import (
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 )
 
 type hashable interface {

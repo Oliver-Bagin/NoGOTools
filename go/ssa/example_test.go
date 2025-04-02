@@ -8,17 +8,17 @@ package ssa_test
 
 import (
 	"fmt"
-	"go/ast"
-	"go/importer"
-	"go/parser"
-	"go/token"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/importer"
+	"github.com/tinygo-org/tinygo/alt_go/parser"
+	"github.com/tinygo-org/tinygo/alt_go/token"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"log"
 	"os"
 
-	"golang.org/x/tools/go/packages"
-	"golang.org/x/tools/go/ssa"
-	"golang.org/x/tools/go/ssa/ssautil"
+	"github.com/tinygo-org/tinygo/x-tools/go/packages"
+	"github.com/tinygo-org/tinygo/x-tools/go/ssa"
+	"github.com/tinygo-org/tinygo/x-tools/go/ssa/ssautil"
 )
 
 const hello = `

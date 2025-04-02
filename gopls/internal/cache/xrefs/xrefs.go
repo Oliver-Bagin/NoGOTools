@@ -9,16 +9,16 @@
 package xrefs
 
 import (
-	"go/ast"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"sort"
 
-	"golang.org/x/tools/go/types/objectpath"
-	"golang.org/x/tools/gopls/internal/cache/metadata"
-	"golang.org/x/tools/gopls/internal/cache/parsego"
-	"golang.org/x/tools/gopls/internal/protocol"
-	"golang.org/x/tools/gopls/internal/util/bug"
-	"golang.org/x/tools/gopls/internal/util/frob"
+	"github.com/tinygo-org/tinygo/x-tools/go/types/objectpath"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/cache/metadata"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/cache/parsego"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/protocol"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/util/bug"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/util/frob"
 )
 
 // Index constructs a serializable index of outbound cross-references

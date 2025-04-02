@@ -5,9 +5,9 @@
 package ssa
 
 import (
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 
-	"golang.org/x/tools/internal/typeparams"
+	"github.com/tinygo-org/tinygo/x-tools/internal/typeparams"
 )
 
 // Utilities for dealing with type sets.

@@ -21,10 +21,10 @@ import (
 	"sync"
 	"testing"
 
-	"golang.org/x/tools/internal/event"
-	"golang.org/x/tools/internal/event/core"
-	"golang.org/x/tools/internal/event/export"
-	"golang.org/x/tools/internal/event/label"
+	"github.com/tinygo-org/tinygo/x-tools/internal/event"
+	"github.com/tinygo-org/tinygo/x-tools/internal/event/core"
+	"github.com/tinygo-org/tinygo/x-tools/internal/event/export"
+	"github.com/tinygo-org/tinygo/x-tools/internal/event/label"
 )
 
 func init() {

@@ -5,11 +5,11 @@
 package framepointer_test
 
 import (
-	"go/build"
+	"github.com/tinygo-org/tinygo/alt_go/build"
 	"testing"
 
-	"golang.org/x/tools/go/analysis/analysistest"
-	"golang.org/x/tools/go/analysis/passes/framepointer"
+	"github.com/tinygo-org/tinygo/x-tools/go/analysis/analysistest"
+	"github.com/tinygo-org/tinygo/x-tools/go/analysis/passes/framepointer"
 )
 
 func Test(t *testing.T) {

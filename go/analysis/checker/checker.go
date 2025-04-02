@@ -32,7 +32,7 @@ import (
 	"bytes"
 	"encoding/gob"
 	"fmt"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"io"
 	"log"
 	"os"
@@ -42,11 +42,11 @@ import (
 	"sync"
 	"time"
 
-	"golang.org/x/tools/go/analysis"
-	"golang.org/x/tools/go/analysis/internal"
-	"golang.org/x/tools/go/analysis/internal/analysisflags"
-	"golang.org/x/tools/go/packages"
-	"golang.org/x/tools/internal/analysisinternal"
+	"github.com/tinygo-org/tinygo/x-tools/go/analysis"
+	"github.com/tinygo-org/tinygo/x-tools/go/analysis/internal"
+	"github.com/tinygo-org/tinygo/x-tools/go/analysis/internal/analysisflags"
+	"github.com/tinygo-org/tinygo/x-tools/go/packages"
+	"github.com/tinygo-org/tinygo/x-tools/internal/analysisinternal"
 )
 
 // Options specifies options that control the analysis driver.

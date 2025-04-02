@@ -8,8 +8,8 @@ package a
 
 import (
 	"flag"
-	"go/scanner"
-	"go/token"
+	"github.com/tinygo-org/tinygo/alt_go/scanner"
+	"github.com/tinygo-org/tinygo/alt_go/token"
 	"image"
 	"sync"
 	"unicode"

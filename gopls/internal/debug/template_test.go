@@ -11,7 +11,7 @@ package debug_test
 // calls to render(). The test assumes that all uses of templates are done through render().
 
 import (
-	"go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
 	"html/template"
 	"os"
 	"runtime"
@@ -19,12 +19,12 @@ import (
 	"testing"
 
 	"github.com/jba/templatecheck"
-	"golang.org/x/tools/go/packages"
-	"golang.org/x/tools/gopls/internal/cache"
-	"golang.org/x/tools/gopls/internal/debug"
-	"golang.org/x/tools/gopls/internal/file"
-	"golang.org/x/tools/gopls/internal/util/moremaps"
-	"golang.org/x/tools/internal/testenv"
+	"github.com/tinygo-org/tinygo/x-tools/go/packages"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/cache"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/debug"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/file"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/util/moremaps"
+	"github.com/tinygo-org/tinygo/x-tools/internal/testenv"
 )
 
 var templates = map[string]struct {
@@ -62,7 +62,7 @@ func TestTemplates(t *testing.T) {
 		"GOFLAGS=-mod=mod",
 	)
 
-	pkgs, err := packages.Load(cfg, "golang.org/x/tools/gopls/internal/debug")
+	pkgs, err := packages.Load(cfg, "github.com/tinygo-org/tinygo/x-tools/gopls/internal/debug")
 	if err != nil {
 		t.Fatal(err)
 	}

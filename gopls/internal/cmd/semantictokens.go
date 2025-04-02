@@ -13,9 +13,9 @@ import (
 	"os"
 	"unicode/utf8"
 
-	"golang.org/x/tools/gopls/internal/protocol"
-	"golang.org/x/tools/gopls/internal/protocol/semtok"
-	"golang.org/x/tools/gopls/internal/settings"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/protocol"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/protocol/semtok"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/settings"
 )
 
 // generate semantic tokens and interpolate them in the file

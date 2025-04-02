@@ -12,14 +12,14 @@ import (
 	"encoding/json"
 	"flag"
 	"fmt"
-	"go/token"
+	"github.com/tinygo-org/tinygo/alt_go/token"
 	"io"
 	"log"
 	"os"
 	"strconv"
 	"strings"
 
-	"golang.org/x/tools/go/analysis"
+	"github.com/tinygo-org/tinygo/x-tools/go/analysis"
 )
 
 // flags common to all {single,multi,unit}checkers.

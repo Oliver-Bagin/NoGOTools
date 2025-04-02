@@ -7,12 +7,12 @@ package cache
 import (
 	"context"
 	"fmt"
-	"go/parser"
-	"go/token"
+	"github.com/tinygo-org/tinygo/alt_go/parser"
+	"github.com/tinygo-org/tinygo/alt_go/token"
 	"path/filepath"
 
-	"golang.org/x/tools/gopls/internal/cache/parsego"
-	"golang.org/x/tools/gopls/internal/file"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/cache/parsego"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/file"
 )
 
 // ParseGo parses the file whose contents are provided by fh.

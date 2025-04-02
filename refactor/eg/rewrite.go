@@ -10,16 +10,16 @@ package eg
 
 import (
 	"fmt"
-	"go/ast"
-	"go/token"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/token"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"os"
 	"reflect"
 	"sort"
 	"strconv"
 	"strings"
 
-	"golang.org/x/tools/go/ast/astutil"
+	"github.com/tinygo-org/tinygo/x-tools/go/ast/astutil"
 )
 
 // transformItem takes a reflect.Value representing a variable of type ast.Node

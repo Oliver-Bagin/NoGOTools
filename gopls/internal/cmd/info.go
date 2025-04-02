@@ -16,13 +16,13 @@ import (
 	"sort"
 	"strings"
 
-	"golang.org/x/tools/gopls/internal/debug"
-	"golang.org/x/tools/gopls/internal/doc"
-	"golang.org/x/tools/gopls/internal/filecache"
-	licensespkg "golang.org/x/tools/gopls/internal/licenses"
-	"golang.org/x/tools/gopls/internal/util/browser"
-	goplsbug "golang.org/x/tools/gopls/internal/util/bug"
-	"golang.org/x/tools/internal/tool"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/debug"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/doc"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/filecache"
+	licensespkg "github.com/tinygo-org/tinygo/x-tools/gopls/internal/licenses"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/util/browser"
+	goplsbug "github.com/tinygo-org/tinygo/x-tools/gopls/internal/util/bug"
+	"github.com/tinygo-org/tinygo/x-tools/internal/tool"
 )
 
 // help implements the help command.

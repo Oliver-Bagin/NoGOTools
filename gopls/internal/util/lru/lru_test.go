@@ -14,7 +14,7 @@ import (
 	"testing"
 
 	"golang.org/x/sync/errgroup"
-	"golang.org/x/tools/gopls/internal/util/lru"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/util/lru"
 )
 
 func TestCache(t *testing.T) {

@@ -6,13 +6,13 @@ package inline_test
 
 import (
 	"fmt"
-	"go/ast"
-	"go/parser"
-	"go/token"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/parser"
+	"github.com/tinygo-org/tinygo/alt_go/token"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"testing"
 
-	"golang.org/x/tools/internal/refactor/inline"
+	"github.com/tinygo-org/tinygo/x-tools/internal/refactor/inline"
 )
 
 // TestCalleeEffects is a unit test of the calleefx analysis.

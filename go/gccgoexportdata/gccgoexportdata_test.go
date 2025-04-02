@@ -5,11 +5,11 @@
 package gccgoexportdata_test
 
 import (
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"os"
 	"testing"
 
-	"golang.org/x/tools/go/gccgoexportdata"
+	"github.com/tinygo-org/tinygo/x-tools/go/gccgoexportdata"
 )
 
 // Test ensures this package can read gccgo export data from the

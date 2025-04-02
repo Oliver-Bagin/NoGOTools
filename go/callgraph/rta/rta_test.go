@@ -10,18 +10,18 @@ package rta_test
 
 import (
 	"fmt"
-	"go/ast"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"sort"
 	"strings"
 	"testing"
 
-	"golang.org/x/tools/go/callgraph"
-	"golang.org/x/tools/go/callgraph/rta"
-	"golang.org/x/tools/go/ssa"
-	"golang.org/x/tools/go/ssa/ssautil"
-	"golang.org/x/tools/internal/testfiles"
-	"golang.org/x/tools/txtar"
+	"github.com/tinygo-org/tinygo/x-tools/go/callgraph"
+	"github.com/tinygo-org/tinygo/x-tools/go/callgraph/rta"
+	"github.com/tinygo-org/tinygo/x-tools/go/ssa"
+	"github.com/tinygo-org/tinygo/x-tools/go/ssa/ssautil"
+	"github.com/tinygo-org/tinygo/x-tools/internal/testfiles"
+	"github.com/tinygo-org/tinygo/x-tools/txtar"
 )
 
 // TestRTA runs RTA on each testdata/*.txtar file containing a single

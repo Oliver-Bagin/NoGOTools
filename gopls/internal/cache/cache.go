@@ -9,9 +9,9 @@ import (
 	"strconv"
 	"sync/atomic"
 
-	"golang.org/x/tools/gopls/internal/protocol/command"
-	"golang.org/x/tools/internal/imports"
-	"golang.org/x/tools/internal/memoize"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/protocol/command"
+	"github.com/tinygo-org/tinygo/x-tools/internal/imports"
+	"github.com/tinygo-org/tinygo/x-tools/internal/memoize"
 )
 
 // ballast is a 100MB unused byte slice that exists only to reduce garbage

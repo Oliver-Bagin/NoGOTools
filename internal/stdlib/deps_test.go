@@ -13,7 +13,7 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"golang.org/x/tools/internal/stdlib"
+	"github.com/tinygo-org/tinygo/x-tools/internal/stdlib"
 )
 
 func TestImports(t *testing.T) { testDepsFunc(t, "testdata/nethttp.imports", stdlib.Imports) }

@@ -8,7 +8,7 @@ import (
 	"bytes"
 	"context"
 	"fmt"
-	"go/build"
+	"github.com/tinygo-org/tinygo/alt_go/build"
 	"io"
 	"net"
 	"net/http"
@@ -21,8 +21,8 @@ import (
 	"testing"
 	"time"
 
-	"golang.org/x/tools/internal/packagestest"
-	"golang.org/x/tools/internal/testenv"
+	"github.com/tinygo-org/tinygo/x-tools/internal/packagestest"
+	"github.com/tinygo-org/tinygo/x-tools/internal/testenv"
 )
 
 func TestMain(m *testing.M) {

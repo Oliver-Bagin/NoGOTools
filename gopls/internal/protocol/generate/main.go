@@ -15,7 +15,7 @@ import (
 	"encoding/json"
 	"flag"
 	"fmt"
-	"go/format"
+	"github.com/tinygo-org/tinygo/alt_go/format"
 	"log"
 	"os"
 	"os/exec"
@@ -98,7 +98,7 @@ func writeclient() {
 		`import (
 	"context"
 
-	"golang.org/x/tools/internal/jsonrpc2"
+	"github.com/tinygo-org/tinygo/x-tools/internal/jsonrpc2"
 )
 `)
 	out.WriteString("type Client interface {\n")
@@ -127,7 +127,7 @@ func writeserver() {
 		`import (
 	"context"
 
-	"golang.org/x/tools/internal/jsonrpc2"
+	"github.com/tinygo-org/tinygo/x-tools/internal/jsonrpc2"
 )
 `)
 	out.WriteString("type Server interface {\n")

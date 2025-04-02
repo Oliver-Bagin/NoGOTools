@@ -13,15 +13,15 @@
 package metadata
 
 import (
-	"go/ast"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"sort"
 	"strconv"
 	"strings"
 
-	"golang.org/x/tools/go/packages"
-	"golang.org/x/tools/gopls/internal/protocol"
-	"golang.org/x/tools/internal/packagesinternal"
+	"github.com/tinygo-org/tinygo/x-tools/go/packages"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/protocol"
+	"github.com/tinygo-org/tinygo/x-tools/internal/packagesinternal"
 )
 
 // Declare explicit types for package paths, names, and IDs to ensure that we

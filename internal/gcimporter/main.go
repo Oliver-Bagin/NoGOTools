@@ -14,16 +14,16 @@ import (
 	"bytes"
 	"flag"
 	"fmt"
-	"go/token"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/token"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"log"
 	"os"
 	"sort"
 
-	"golang.org/x/tools/go/gcexportdata"
-	"golang.org/x/tools/go/packages"
-	"golang.org/x/tools/go/types/typeutil"
-	"golang.org/x/tools/internal/gcimporter"
+	"github.com/tinygo-org/tinygo/x-tools/go/gcexportdata"
+	"github.com/tinygo-org/tinygo/x-tools/go/packages"
+	"github.com/tinygo-org/tinygo/x-tools/go/types/typeutil"
+	"github.com/tinygo-org/tinygo/x-tools/internal/gcimporter"
 )
 
 func main() {

@@ -7,10 +7,10 @@ package astutil
 
 import (
 	"bytes"
-	"go/scanner"
-	"go/token"
+	"github.com/tinygo-org/tinygo/alt_go/scanner"
+	"github.com/tinygo-org/tinygo/alt_go/token"
 
-	"golang.org/x/tools/gopls/internal/util/safetoken"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/util/safetoken"
 )
 
 // PurgeFuncBodies returns a copy of src in which the contents of each

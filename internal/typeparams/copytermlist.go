@@ -11,17 +11,17 @@ package main
 import (
 	"bytes"
 	"fmt"
-	"go/ast"
-	"go/format"
-	"go/parser"
-	"go/token"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/format"
+	"github.com/tinygo-org/tinygo/alt_go/parser"
+	"github.com/tinygo-org/tinygo/alt_go/token"
 	"os"
 	"path/filepath"
 	"reflect"
 	"runtime"
 	"strings"
 
-	"golang.org/x/tools/go/ast/astutil"
+	"github.com/tinygo-org/tinygo/x-tools/go/ast/astutil"
 )
 
 func main() {
@@ -76,7 +76,7 @@ func doCopy() error {
 			return true
 		}, nil)
 		if needImport {
-			astutil.AddImport(fset, file, "go/types")
+			astutil.AddImport(fset, file, "github.com/tinygo-org/tinygo/alt_go/types")
 		}
 
 		var b bytes.Buffer

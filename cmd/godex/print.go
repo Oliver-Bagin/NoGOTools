@@ -7,9 +7,9 @@ package main
 import (
 	"bytes"
 	"fmt"
-	"go/constant"
-	"go/token"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/constant"
+	"github.com/tinygo-org/tinygo/alt_go/token"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"io"
 	"math/big"
 )

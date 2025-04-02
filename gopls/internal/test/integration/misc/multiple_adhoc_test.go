@@ -7,7 +7,7 @@ package misc
 import (
 	"testing"
 
-	. "golang.org/x/tools/gopls/internal/test/integration"
+	. "github.com/tinygo-org/tinygo/x-tools/gopls/internal/test/integration"
 )
 
 func TestMultipleAdHocPackages(t *testing.T) {

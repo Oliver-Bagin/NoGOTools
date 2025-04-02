@@ -6,10 +6,10 @@ package buildutil
 
 import (
 	"fmt"
-	"go/ast"
-	"go/build"
-	"go/parser"
-	"go/token"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/build"
+	"github.com/tinygo-org/tinygo/alt_go/parser"
+	"github.com/tinygo-org/tinygo/alt_go/token"
 	"io"
 	"io/ioutil"
 	"os"

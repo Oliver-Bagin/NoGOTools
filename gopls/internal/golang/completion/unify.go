@@ -47,7 +47,7 @@ package completion
 
 import (
 	"fmt"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"strings"
 )
 

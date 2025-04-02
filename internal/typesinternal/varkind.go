@@ -7,7 +7,7 @@ package typesinternal
 // TODO(adonovan): when CL 645115 lands, define the go1.25 version of
 // this API that actually does something.
 
-import "go/types"
+import "github.com/tinygo-org/tinygo/alt_go/types"
 
 type VarKind uint8
 

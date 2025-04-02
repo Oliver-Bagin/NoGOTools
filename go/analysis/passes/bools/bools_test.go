@@ -7,8 +7,8 @@ package bools_test
 import (
 	"testing"
 
-	"golang.org/x/tools/go/analysis/analysistest"
-	"golang.org/x/tools/go/analysis/passes/bools"
+	"github.com/tinygo-org/tinygo/x-tools/go/analysis/analysistest"
+	"github.com/tinygo-org/tinygo/x-tools/go/analysis/passes/bools"
 )
 
 func Test(t *testing.T) {

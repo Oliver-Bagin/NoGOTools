@@ -7,7 +7,7 @@ package persistent
 import (
 	"iter"
 
-	"golang.org/x/tools/gopls/internal/util/constraints"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/util/constraints"
 )
 
 // Set is a collection of elements of type K.

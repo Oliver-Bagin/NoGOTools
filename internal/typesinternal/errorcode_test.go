@@ -6,11 +6,11 @@ package typesinternal_test
 
 import (
 	"fmt"
-	"go/ast"
-	"go/constant"
-	"go/parser"
-	"go/token"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/constant"
+	"github.com/tinygo-org/tinygo/alt_go/parser"
+	"github.com/tinygo-org/tinygo/alt_go/token"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"path/filepath"
 	"runtime"
 	"sort"

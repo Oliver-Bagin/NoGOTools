@@ -74,18 +74,18 @@ package ssa
 
 import (
 	"fmt"
-	"go/ast"
-	"go/constant"
-	"go/token"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/constant"
+	"github.com/tinygo-org/tinygo/alt_go/token"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"os"
 	"runtime"
 	"sync"
 
 	"slices"
 
-	"golang.org/x/tools/internal/typeparams"
-	"golang.org/x/tools/internal/versions"
+	"github.com/tinygo-org/tinygo/x-tools/internal/typeparams"
+	"github.com/tinygo-org/tinygo/x-tools/internal/versions"
 )
 
 type opaqueType struct{ name string }

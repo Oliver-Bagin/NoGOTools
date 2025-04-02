@@ -19,15 +19,15 @@ import (
 	"sync/atomic"
 	"time"
 
-	"golang.org/x/tools/gopls/internal/cache"
-	"golang.org/x/tools/gopls/internal/debug"
-	"golang.org/x/tools/gopls/internal/label"
-	"golang.org/x/tools/gopls/internal/protocol"
-	"golang.org/x/tools/gopls/internal/protocol/command"
-	"golang.org/x/tools/gopls/internal/server"
-	"golang.org/x/tools/gopls/internal/settings"
-	"golang.org/x/tools/internal/event"
-	"golang.org/x/tools/internal/jsonrpc2"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/cache"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/debug"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/label"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/protocol"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/protocol/command"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/server"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/settings"
+	"github.com/tinygo-org/tinygo/x-tools/internal/event"
+	"github.com/tinygo-org/tinygo/x-tools/internal/jsonrpc2"
 )
 
 // Unique identifiers for client/server.

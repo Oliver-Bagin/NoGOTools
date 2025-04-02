@@ -8,16 +8,16 @@ package inline
 
 import (
 	"fmt"
-	"go/ast"
-	"go/constant"
-	"go/format"
-	"go/token"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/constant"
+	"github.com/tinygo-org/tinygo/alt_go/format"
+	"github.com/tinygo-org/tinygo/alt_go/token"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"strconv"
 	"strings"
 
-	"golang.org/x/tools/go/types/typeutil"
-	"golang.org/x/tools/internal/typeparams"
+	"github.com/tinygo-org/tinygo/x-tools/go/types/typeutil"
+	"github.com/tinygo-org/tinygo/x-tools/internal/typeparams"
 )
 
 // falconResult is the result of the analysis of the callee.

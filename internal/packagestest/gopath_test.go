@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"golang.org/x/tools/internal/packagestest"
+	"github.com/tinygo-org/tinygo/x-tools/internal/packagestest"
 )
 
 func TestGOPATHExport(t *testing.T) {

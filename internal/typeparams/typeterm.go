@@ -6,7 +6,7 @@
 
 package typeparams
 
-import "go/types"
+import "github.com/tinygo-org/tinygo/alt_go/types"
 
 // A term describes elementary type sets:
 //

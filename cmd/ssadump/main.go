@@ -3,21 +3,21 @@
 // license that can be found in the LICENSE file.
 
 // ssadump: a tool for displaying and interpreting the SSA form of Go programs.
-package main // import "golang.org/x/tools/cmd/ssadump"
+package main // import "github.com/tinygo-org/tinygo/x-tools/cmd/ssadump"
 
 import (
 	"flag"
 	"fmt"
-	"go/build"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/build"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"os"
 	"runtime"
 	"runtime/pprof"
 
-	"golang.org/x/tools/go/packages"
-	"golang.org/x/tools/go/ssa"
-	"golang.org/x/tools/go/ssa/interp"
-	"golang.org/x/tools/go/ssa/ssautil"
+	"github.com/tinygo-org/tinygo/x-tools/go/packages"
+	"github.com/tinygo-org/tinygo/x-tools/go/ssa"
+	"github.com/tinygo-org/tinygo/x-tools/go/ssa/interp"
+	"github.com/tinygo-org/tinygo/x-tools/go/ssa/ssautil"
 )
 
 // flags

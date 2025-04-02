@@ -9,11 +9,11 @@ package main
 import (
 	"flag"
 	"fmt"
-	"go/build"
+	"github.com/tinygo-org/tinygo/alt_go/build"
 	"os"
 
-	"golang.org/x/tools/go/buildutil"
-	"golang.org/x/tools/refactor/rename"
+	"github.com/tinygo-org/tinygo/x-tools/go/buildutil"
+	"github.com/tinygo-org/tinygo/x-tools/refactor/rename"
 )
 
 var (

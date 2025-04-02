@@ -5,23 +5,23 @@
 // The eg command performs example-based refactoring.
 // For documentation, run the command, or see Help in
 // golang.org/x/tools/refactor/eg.
-package main // import "golang.org/x/tools/cmd/eg"
+package main // import "github.com/tinygo-org/tinygo/x-tools/cmd/eg"
 
 import (
 	"flag"
 	"fmt"
-	"go/ast"
-	"go/format"
-	"go/parser"
-	"go/token"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/format"
+	"github.com/tinygo-org/tinygo/alt_go/parser"
+	"github.com/tinygo-org/tinygo/alt_go/token"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"os"
 	"os/exec"
 	"path/filepath"
 	"strings"
 
-	"golang.org/x/tools/go/packages"
-	"golang.org/x/tools/refactor/eg"
+	"github.com/tinygo-org/tinygo/x-tools/go/packages"
+	"github.com/tinygo-org/tinygo/x-tools/refactor/eg"
 )
 
 var (

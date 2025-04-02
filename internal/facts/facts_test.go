@@ -9,21 +9,21 @@ package facts_test
 import (
 	"encoding/gob"
 	"fmt"
-	"go/ast"
-	"go/parser"
-	"go/token"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/parser"
+	"github.com/tinygo-org/tinygo/alt_go/token"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"os"
 	"reflect"
 	"strings"
 	"testing"
 
-	"golang.org/x/tools/go/analysis/analysistest"
-	"golang.org/x/tools/go/packages"
-	"golang.org/x/tools/internal/aliases"
-	"golang.org/x/tools/internal/facts"
-	"golang.org/x/tools/internal/testenv"
-	"golang.org/x/tools/internal/typesinternal"
+	"github.com/tinygo-org/tinygo/x-tools/go/analysis/analysistest"
+	"github.com/tinygo-org/tinygo/x-tools/go/packages"
+	"github.com/tinygo-org/tinygo/x-tools/internal/aliases"
+	"github.com/tinygo-org/tinygo/x-tools/internal/facts"
+	"github.com/tinygo-org/tinygo/x-tools/internal/testenv"
+	"github.com/tinygo-org/tinygo/x-tools/internal/typesinternal"
 )
 
 type myFact struct {

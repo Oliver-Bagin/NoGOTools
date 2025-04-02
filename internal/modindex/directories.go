@@ -16,7 +16,7 @@ import (
 	"time"
 
 	"golang.org/x/mod/semver"
-	"golang.org/x/tools/internal/gopathwalk"
+	"github.com/tinygo-org/tinygo/x-tools/internal/gopathwalk"
 )
 
 type directory struct {

@@ -5106,7 +5106,7 @@ var PackageSymbols = map[string][]Symbol{
 		{"State", Type, 0},
 		{"Stringer", Type, 0},
 	},
-	"go/ast": {
+	"github.com/tinygo-org/tinygo/alt_go/ast": {
 		{"(*ArrayType).End", Method, 0},
 		{"(*ArrayType).Pos", Method, 0},
 		{"(*AssignStmt).End", Method, 0},
@@ -5544,7 +5544,7 @@ var PackageSymbols = map[string][]Symbol{
 		{"Visitor", Type, 0},
 		{"Walk", Func, 0},
 	},
-	"go/build": {
+	"github.com/tinygo-org/tinygo/alt_go/build": {
 		{"(*Context).Import", Method, 0},
 		{"(*Context).ImportDir", Method, 0},
 		{"(*Context).MatchFile", Method, 2},
@@ -5646,7 +5646,7 @@ var PackageSymbols = map[string][]Symbol{
 		{"Package.XTestImports", Field, 0},
 		{"ToolDir", Var, 0},
 	},
-	"go/build/constraint": {
+	"github.com/tinygo-org/tinygo/alt_go/build/constraint": {
 		{"(*AndExpr).Eval", Method, 16},
 		{"(*AndExpr).String", Method, 16},
 		{"(*NotExpr).Eval", Method, 16},
@@ -5676,7 +5676,7 @@ var PackageSymbols = map[string][]Symbol{
 		{"TagExpr", Type, 16},
 		{"TagExpr.Tag", Field, 16},
 	},
-	"go/constant": {
+	"github.com/tinygo-org/tinygo/alt_go/constant": {
 		{"(Kind).String", Method, 18},
 		{"BinaryOp", Func, 5},
 		{"BitLen", Func, 5},
@@ -5718,7 +5718,7 @@ var PackageSymbols = map[string][]Symbol{
 		{"Val", Func, 13},
 		{"Value", Type, 5},
 	},
-	"go/doc": {
+	"github.com/tinygo-org/tinygo/alt_go/doc": {
 		{"(*Package).Filter", Method, 0},
 		{"(*Package).HTML", Method, 19},
 		{"(*Package).Markdown", Method, 19},
@@ -5790,7 +5790,7 @@ var PackageSymbols = map[string][]Symbol{
 		{"Value.Doc", Field, 0},
 		{"Value.Names", Field, 0},
 	},
-	"go/doc/comment": {
+	"github.com/tinygo-org/tinygo/alt_go/doc/comment": {
 		{"(*DocLink).DefaultURL", Method, 19},
 		{"(*Heading).DefaultID", Method, 19},
 		{"(*List).BlankBefore", Method, 19},
@@ -5847,17 +5847,17 @@ var PackageSymbols = map[string][]Symbol{
 		{"Printer.TextWidth", Field, 19},
 		{"Text", Type, 19},
 	},
-	"go/format": {
+	"github.com/tinygo-org/tinygo/alt_go/format": {
 		{"Node", Func, 1},
 		{"Source", Func, 1},
 	},
-	"go/importer": {
+	"github.com/tinygo-org/tinygo/alt_go/importer": {
 		{"Default", Func, 5},
 		{"For", Func, 5},
 		{"ForCompiler", Func, 12},
 		{"Lookup", Type, 5},
 	},
-	"go/parser": {
+	"github.com/tinygo-org/tinygo/alt_go/parser": {
 		{"AllErrors", Const, 1},
 		{"DeclarationErrors", Const, 0},
 		{"ImportsOnly", Const, 0},
@@ -5872,7 +5872,7 @@ var PackageSymbols = map[string][]Symbol{
 		{"SpuriousErrors", Const, 0},
 		{"Trace", Const, 0},
 	},
-	"go/printer": {
+	"github.com/tinygo-org/tinygo/alt_go/printer": {
 		{"(*Config).Fprint", Method, 0},
 		{"CommentedNode", Type, 0},
 		{"CommentedNode.Comments", Field, 0},
@@ -5888,7 +5888,7 @@ var PackageSymbols = map[string][]Symbol{
 		{"TabIndent", Const, 0},
 		{"UseSpaces", Const, 0},
 	},
-	"go/scanner": {
+	"github.com/tinygo-org/tinygo/alt_go/scanner": {
 		{"(*ErrorList).Add", Method, 0},
 		{"(*ErrorList).RemoveMultiples", Method, 0},
 		{"(*ErrorList).Reset", Method, 0},
@@ -5912,7 +5912,7 @@ var PackageSymbols = map[string][]Symbol{
 		{"Scanner", Type, 0},
 		{"Scanner.ErrorCount", Field, 0},
 	},
-	"go/token": {
+	"github.com/tinygo-org/tinygo/alt_go/token": {
 		{"(*File).AddLine", Method, 0},
 		{"(*File).AddLineColumnInfo", Method, 11},
 		{"(*File).AddLineInfo", Method, 0},
@@ -6048,7 +6048,7 @@ var PackageSymbols = map[string][]Symbol{
 		{"XOR", Const, 0},
 		{"XOR_ASSIGN", Const, 0},
 	},
-	"go/types": {
+	"github.com/tinygo-org/tinygo/alt_go/types": {
 		{"(*Alias).Obj", Method, 22},
 		{"(*Alias).Origin", Method, 23},
 		{"(*Alias).Rhs", Method, 23},
@@ -6470,7 +6470,7 @@ var PackageSymbols = map[string][]Symbol{
 		{"WriteSignature", Func, 5},
 		{"WriteType", Func, 5},
 	},
-	"go/version": {
+	"github.com/tinygo-org/tinygo/alt_go/version": {
 		{"Compare", Func, 22},
 		{"IsValid", Func, 22},
 		{"Lang", Func, 22},

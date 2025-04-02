@@ -7,13 +7,13 @@
 package framepointer
 
 import (
-	"go/build"
+	"github.com/tinygo-org/tinygo/alt_go/build"
 	"regexp"
 	"strings"
 	"unicode"
 
-	"golang.org/x/tools/go/analysis"
-	"golang.org/x/tools/go/analysis/passes/internal/analysisutil"
+	"github.com/tinygo-org/tinygo/x-tools/go/analysis"
+	"github.com/tinygo-org/tinygo/x-tools/go/analysis/passes/internal/analysisutil"
 )
 
 const Doc = "report assembly that clobbers the frame pointer before saving it"

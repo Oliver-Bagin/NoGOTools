@@ -8,7 +8,7 @@ import (
 	"bytes"
 	"unicode/utf8"
 
-	"golang.org/x/tools/internal/diff/lcs"
+	"github.com/tinygo-org/tinygo/x-tools/internal/diff/lcs"
 )
 
 // Strings computes the differences between two strings.

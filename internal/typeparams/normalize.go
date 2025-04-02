@@ -7,7 +7,7 @@ package typeparams
 import (
 	"errors"
 	"fmt"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"os"
 	"strings"
 )

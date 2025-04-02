@@ -12,8 +12,8 @@ package godoc
 
 import (
 	"fmt"
-	"go/scanner"
-	"go/token"
+	"github.com/tinygo-org/tinygo/alt_go/scanner"
+	"github.com/tinygo-org/tinygo/alt_go/token"
 	"io"
 	"regexp"
 	"strconv"

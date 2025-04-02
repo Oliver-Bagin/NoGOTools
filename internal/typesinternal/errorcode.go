@@ -705,7 +705,7 @@ const (
 	// undeclared by the imported package.
 	//
 	// Example:
-	//  import "go/types"
+	//  import "github.com/tinygo-org/tinygo/alt_go/types"
 	//
 	//  var _ = types.NotAnActualIdentifier
 	UndeclaredImportedName

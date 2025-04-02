@@ -18,9 +18,9 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
-	"go/ast"
-	"go/token"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/token"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"maps"
 	"os"
 	"os/exec"
@@ -34,15 +34,15 @@ import (
 	"time"
 	"unicode"
 
-	"golang.org/x/tools/go/ast/astutil"
-	"golang.org/x/tools/go/packages"
-	"golang.org/x/tools/gopls/internal/cache"
-	"golang.org/x/tools/gopls/internal/doc"
-	"golang.org/x/tools/gopls/internal/golang"
-	"golang.org/x/tools/gopls/internal/mod"
-	"golang.org/x/tools/gopls/internal/settings"
-	"golang.org/x/tools/gopls/internal/util/safetoken"
-	internalastutil "golang.org/x/tools/internal/astutil"
+	"github.com/tinygo-org/tinygo/x-tools/go/ast/astutil"
+	"github.com/tinygo-org/tinygo/x-tools/go/packages"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/cache"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/doc"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/golang"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/mod"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/settings"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/util/safetoken"
+	internalastutil "github.com/tinygo-org/tinygo/x-tools/internal/astutil"
 )
 
 func main() {
@@ -61,7 +61,7 @@ func doMain(write bool) (bool, error) {
 		return false, err
 	}
 
-	goplsDir, err := pkgDir("golang.org/x/tools/gopls")
+	goplsDir, err := pkgDir("github.com/tinygo-org/tinygo/x-tools/gopls")
 	if err != nil {
 		return false, err
 	}
@@ -126,7 +126,7 @@ func loadAPI() (*doc.API, error) {
 		&packages.Config{
 			Mode: packages.NeedTypes | packages.NeedTypesInfo | packages.NeedSyntax | packages.NeedDeps,
 		},
-		"golang.org/x/tools/gopls/internal/settings",
+		"github.com/tinygo-org/tinygo/x-tools/gopls/internal/settings",
 	)
 	if err != nil {
 		return nil, err

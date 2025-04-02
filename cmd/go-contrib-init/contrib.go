@@ -12,7 +12,7 @@ import (
 	"bytes"
 	"flag"
 	"fmt"
-	"go/build"
+	"github.com/tinygo-org/tinygo/alt_go/build"
 	"log"
 	"os"
 	"os/exec"

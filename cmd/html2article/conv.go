@@ -4,7 +4,7 @@
 
 // This program takes an HTML file and outputs a corresponding article file in
 // present format. See: golang.org/x/tools/present
-package main // import "golang.org/x/tools/cmd/html2article"
+package main // import "github.com/tinygo-org/tinygo/x-tools/cmd/html2article"
 
 import (
 	"bytes"

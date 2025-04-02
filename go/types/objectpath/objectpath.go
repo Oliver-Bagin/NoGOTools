@@ -25,12 +25,12 @@ package objectpath
 
 import (
 	"fmt"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"strconv"
 	"strings"
 
-	"golang.org/x/tools/internal/aliases"
-	"golang.org/x/tools/internal/typesinternal"
+	"github.com/tinygo-org/tinygo/x-tools/internal/aliases"
+	"github.com/tinygo-org/tinygo/x-tools/internal/typesinternal"
 )
 
 // TODO(adonovan): think about generic aliases.

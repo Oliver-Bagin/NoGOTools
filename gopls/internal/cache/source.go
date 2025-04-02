@@ -11,11 +11,11 @@ import (
 	"slices"
 	"strings"
 
-	"golang.org/x/tools/gopls/internal/cache/metadata"
-	"golang.org/x/tools/gopls/internal/cache/symbols"
-	"golang.org/x/tools/gopls/internal/protocol"
-	"golang.org/x/tools/internal/event"
-	"golang.org/x/tools/internal/imports"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/cache/metadata"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/cache/symbols"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/protocol"
+	"github.com/tinygo-org/tinygo/x-tools/internal/event"
+	"github.com/tinygo-org/tinygo/x-tools/internal/imports"
 )
 
 // goplsSource is an imports.Source that provides import information using

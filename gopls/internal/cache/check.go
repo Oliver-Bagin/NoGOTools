@@ -8,11 +8,11 @@ import (
 	"context"
 	"crypto/sha256"
 	"fmt"
-	"go/ast"
-	"go/build"
-	"go/parser"
-	"go/token"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/build"
+	"github.com/tinygo-org/tinygo/alt_go/parser"
+	"github.com/tinygo-org/tinygo/alt_go/token"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"regexp"
 	"runtime"
 	"slices"
@@ -23,25 +23,25 @@ import (
 
 	"golang.org/x/mod/module"
 	"golang.org/x/sync/errgroup"
-	"golang.org/x/tools/go/ast/astutil"
-	"golang.org/x/tools/gopls/internal/bloom"
-	"golang.org/x/tools/gopls/internal/cache/metadata"
-	"golang.org/x/tools/gopls/internal/cache/parsego"
-	"golang.org/x/tools/gopls/internal/cache/typerefs"
-	"golang.org/x/tools/gopls/internal/file"
-	"golang.org/x/tools/gopls/internal/filecache"
-	"golang.org/x/tools/gopls/internal/label"
-	"golang.org/x/tools/gopls/internal/protocol"
-	"golang.org/x/tools/gopls/internal/util/bug"
-	"golang.org/x/tools/gopls/internal/util/moremaps"
-	"golang.org/x/tools/gopls/internal/util/safetoken"
-	"golang.org/x/tools/internal/analysisinternal"
-	"golang.org/x/tools/internal/event"
-	"golang.org/x/tools/internal/gcimporter"
-	"golang.org/x/tools/internal/packagesinternal"
-	"golang.org/x/tools/internal/tokeninternal"
-	"golang.org/x/tools/internal/typesinternal"
-	"golang.org/x/tools/internal/versions"
+	"github.com/tinygo-org/tinygo/x-tools/go/ast/astutil"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/bloom"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/cache/metadata"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/cache/parsego"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/cache/typerefs"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/file"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/filecache"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/label"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/protocol"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/util/bug"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/util/moremaps"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/util/safetoken"
+	"github.com/tinygo-org/tinygo/x-tools/internal/analysisinternal"
+	"github.com/tinygo-org/tinygo/x-tools/internal/event"
+	"github.com/tinygo-org/tinygo/x-tools/internal/gcimporter"
+	"github.com/tinygo-org/tinygo/x-tools/internal/packagesinternal"
+	"github.com/tinygo-org/tinygo/x-tools/internal/tokeninternal"
+	"github.com/tinygo-org/tinygo/x-tools/internal/typesinternal"
+	"github.com/tinygo-org/tinygo/x-tools/internal/versions"
 )
 
 type unit = struct{}
@@ -1956,7 +1956,7 @@ func missingPkgError(from PackageID, pkgPath string, viewType ViewType) error {
 	case AdHocView:
 		return fmt.Errorf("cannot find package %q in GOROOT", pkgPath)
 	case GoPackagesDriverView:
-		return fmt.Errorf("go/packages driver could not load %q", pkgPath)
+		return fmt.Errorf("github.com/tinygo-org/tinygo/alt_go/packages driver could not load %q", pkgPath)
 	case GOPATHView:
 		return fmt.Errorf("cannot find package %q in GOROOT or GOPATH", pkgPath)
 	default:

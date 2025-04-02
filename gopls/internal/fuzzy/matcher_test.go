@@ -13,7 +13,7 @@ import (
 	"math"
 	"testing"
 
-	"golang.org/x/tools/gopls/internal/fuzzy"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/fuzzy"
 )
 
 type comparator struct {

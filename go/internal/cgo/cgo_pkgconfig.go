@@ -7,7 +7,7 @@ package cgo
 import (
 	"errors"
 	"fmt"
-	"go/build"
+	"github.com/tinygo-org/tinygo/alt_go/build"
 	"os/exec"
 	"strings"
 )

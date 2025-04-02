@@ -5,14 +5,14 @@
 package aliases_test
 
 import (
-	"go/ast"
-	"go/parser"
-	"go/token"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/parser"
+	"github.com/tinygo-org/tinygo/alt_go/token"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"testing"
 
-	"golang.org/x/tools/internal/aliases"
-	"golang.org/x/tools/internal/testenv"
+	"github.com/tinygo-org/tinygo/x-tools/internal/aliases"
+	"github.com/tinygo-org/tinygo/x-tools/internal/testenv"
 )
 
 // TestNewAlias tests that alias.NewAlias creates an alias of a type

@@ -43,10 +43,10 @@ import (
 	"encoding/gob"
 	"errors"
 	"fmt"
-	"go/ast"
-	"go/doc"
-	"go/parser"
-	"go/token"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/doc"
+	"github.com/tinygo-org/tinygo/alt_go/parser"
+	"github.com/tinygo-org/tinygo/alt_go/token"
 	"index/suffixarray"
 	"io"
 	"log"
@@ -63,8 +63,8 @@ import (
 	"time"
 	"unicode"
 
-	"golang.org/x/tools/godoc/util"
-	"golang.org/x/tools/godoc/vfs"
+	"github.com/tinygo-org/tinygo/x-tools/godoc/util"
+	"github.com/tinygo-org/tinygo/x-tools/godoc/vfs"
 )
 
 // ----------------------------------------------------------------------------

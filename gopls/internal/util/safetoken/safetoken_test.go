@@ -6,15 +6,15 @@ package safetoken_test
 
 import (
 	"fmt"
-	"go/parser"
-	"go/token"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/parser"
+	"github.com/tinygo-org/tinygo/alt_go/token"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"os"
 	"testing"
 
-	"golang.org/x/tools/go/packages"
-	"golang.org/x/tools/gopls/internal/util/safetoken"
-	"golang.org/x/tools/internal/testenv"
+	"github.com/tinygo-org/tinygo/x-tools/go/packages"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/util/safetoken"
+	"github.com/tinygo-org/tinygo/x-tools/internal/testenv"
 )
 
 func TestWorkaroundIssue57490(t *testing.T) {
@@ -84,13 +84,13 @@ func TestGoplsSourceDoesNotCallTokenFileMethods(t *testing.T) {
 		"GOFLAGS=-mod=mod",
 	)
 
-	pkgs, err := packages.Load(cfg, "go/token", "golang.org/x/tools/gopls/...")
+	pkgs, err := packages.Load(cfg, "github.com/tinygo-org/tinygo/alt_go/token", "github.com/tinygo-org/tinygo/x-tools/gopls/...")
 	if err != nil {
 		t.Fatal(err)
 	}
 	var tokenPkg *packages.Package
 	for _, pkg := range pkgs {
-		if pkg.PkgPath == "go/token" {
+		if pkg.PkgPath == "github.com/tinygo-org/tinygo/alt_go/token" {
 			tokenPkg = pkg
 			break
 		}
@@ -116,9 +116,9 @@ func TestGoplsSourceDoesNotCallTokenFileMethods(t *testing.T) {
 
 	for _, pkg := range pkgs {
 		switch pkg.PkgPath {
-		case "go/token",
-			"golang.org/x/tools/gopls/internal/util/safetoken", // this package
-			"golang.org/x/tools/gopls/internal/cache/parsego":  // copies go/parser/resolver.go
+		case "github.com/tinygo-org/tinygo/alt_go/token",
+			"github.com/tinygo-org/tinygo/x-tools/gopls/internal/util/safetoken", // this package
+			"github.com/tinygo-org/tinygo/x-tools/gopls/internal/cache/parsego":  // copies go/parser/resolver.go
 			continue // allow calls within these packages
 		}
 

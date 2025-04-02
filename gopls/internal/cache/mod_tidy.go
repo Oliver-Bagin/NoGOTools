@@ -8,22 +8,22 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"go/ast"
-	"go/token"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/token"
 	"os"
 	"path/filepath"
 	"strconv"
 	"strings"
 
 	"golang.org/x/mod/modfile"
-	"golang.org/x/tools/gopls/internal/cache/parsego"
-	"golang.org/x/tools/gopls/internal/file"
-	"golang.org/x/tools/gopls/internal/label"
-	"golang.org/x/tools/gopls/internal/protocol"
-	"golang.org/x/tools/gopls/internal/protocol/command"
-	"golang.org/x/tools/internal/diff"
-	"golang.org/x/tools/internal/event"
-	"golang.org/x/tools/internal/memoize"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/cache/parsego"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/file"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/label"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/protocol"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/protocol/command"
+	"github.com/tinygo-org/tinygo/x-tools/internal/diff"
+	"github.com/tinygo-org/tinygo/x-tools/internal/event"
+	"github.com/tinygo-org/tinygo/x-tools/internal/memoize"
 )
 
 // This error is sought by mod diagnostics.
@@ -262,8 +262,8 @@ func missingModuleDiagnostics(ctx context.Context, snapshot *Snapshot, pm *Parse
 			// Example:
 			//
 			// import (
-			//   "golang.org/x/tools/internal/expect"
-			//   "golang.org/x/tools/go/packages"
+			//   "github.com/tinygo-org/tinygo/x-tools/internal/expect"
+			//   "github.com/tinygo-org/tinygo/x-tools/go/packages"
 			// )
 			// They both are related to the same module: "golang.org/x/tools".
 			var match string

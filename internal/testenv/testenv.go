@@ -11,7 +11,7 @@ import (
 	"bytes"
 	"context"
 	"fmt"
-	"go/build"
+	"github.com/tinygo-org/tinygo/alt_go/build"
 	"log"
 	"os"
 	"os/exec"
@@ -24,8 +24,8 @@ import (
 	"time"
 
 	"golang.org/x/mod/modfile"
-	"golang.org/x/tools/internal/gocommand"
-	"golang.org/x/tools/internal/goroot"
+	"github.com/tinygo-org/tinygo/x-tools/internal/gocommand"
+	"github.com/tinygo-org/tinygo/x-tools/internal/goroot"
 )
 
 // packageMainIsDevel reports whether the module containing package main

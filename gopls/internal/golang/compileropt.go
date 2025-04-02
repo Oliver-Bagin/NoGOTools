@@ -14,10 +14,10 @@ import (
 	"runtime"
 	"strings"
 
-	"golang.org/x/tools/gopls/internal/cache"
-	"golang.org/x/tools/gopls/internal/protocol"
-	"golang.org/x/tools/gopls/internal/settings"
-	"golang.org/x/tools/internal/event"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/cache"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/protocol"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/settings"
+	"github.com/tinygo-org/tinygo/x-tools/internal/event"
 )
 
 // CompilerOptDetails invokes the Go compiler with the "-json=0,dir"

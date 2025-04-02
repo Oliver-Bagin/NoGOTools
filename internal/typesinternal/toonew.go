@@ -5,10 +5,10 @@
 package typesinternal
 
 import (
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 
-	"golang.org/x/tools/internal/stdlib"
-	"golang.org/x/tools/internal/versions"
+	"github.com/tinygo-org/tinygo/x-tools/internal/stdlib"
+	"github.com/tinygo-org/tinygo/x-tools/internal/versions"
 )
 
 // TooNewStdSymbols computes the set of package-level symbols

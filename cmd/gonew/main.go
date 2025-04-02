@@ -37,8 +37,8 @@ import (
 	"encoding/json"
 	"flag"
 	"fmt"
-	"go/parser"
-	"go/token"
+	"github.com/tinygo-org/tinygo/alt_go/parser"
+	"github.com/tinygo-org/tinygo/alt_go/token"
 	"io/fs"
 	"log"
 	"os"
@@ -50,7 +50,7 @@ import (
 
 	"golang.org/x/mod/modfile"
 	"golang.org/x/mod/module"
-	"golang.org/x/tools/internal/edit"
+	"github.com/tinygo-org/tinygo/x-tools/internal/edit"
 )
 
 func usage() {

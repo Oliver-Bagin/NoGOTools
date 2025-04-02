@@ -9,11 +9,11 @@ package typeutil
 import (
 	"bytes"
 	"fmt"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"hash/maphash"
 	"unsafe"
 
-	"golang.org/x/tools/internal/typeparams"
+	"github.com/tinygo-org/tinygo/x-tools/internal/typeparams"
 )
 
 // Map is a hash-table-based mapping from types (types.Type) to

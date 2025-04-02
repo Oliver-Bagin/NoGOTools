@@ -14,10 +14,10 @@ package rename
 import (
 	"bytes"
 	"fmt"
-	"go/ast"
-	"go/build"
-	"go/format"
-	"go/token"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/build"
+	"github.com/tinygo-org/tinygo/alt_go/format"
+	"github.com/tinygo-org/tinygo/alt_go/token"
 	"log"
 	"os"
 	"os/exec"
@@ -29,9 +29,9 @@ import (
 	"strings"
 	"text/template"
 
-	"golang.org/x/tools/go/buildutil"
-	"golang.org/x/tools/go/loader"
-	"golang.org/x/tools/refactor/importgraph"
+	"github.com/tinygo-org/tinygo/x-tools/go/buildutil"
+	"github.com/tinygo-org/tinygo/x-tools/go/loader"
+	"github.com/tinygo-org/tinygo/x-tools/refactor/importgraph"
 )
 
 // Move, given a package path and a destination package path, will try

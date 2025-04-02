@@ -5,14 +5,14 @@
 package analysisinternal
 
 import (
-	"go/ast"
-	"go/parser"
-	"go/token"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/parser"
+	"github.com/tinygo-org/tinygo/alt_go/token"
 	"slices"
 	"testing"
 
-	"golang.org/x/tools/go/ast/inspector"
-	"golang.org/x/tools/internal/astutil/cursor"
+	"github.com/tinygo-org/tinygo/x-tools/go/ast/inspector"
+	"github.com/tinygo-org/tinygo/x-tools/internal/astutil/cursor"
 )
 
 func TestCanImport(t *testing.T) {

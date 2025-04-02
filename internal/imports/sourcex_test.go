@@ -12,8 +12,8 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"golang.org/x/tools/internal/imports"
-	"golang.org/x/tools/internal/modindex"
+	"github.com/tinygo-org/tinygo/x-tools/internal/imports"
+	"github.com/tinygo-org/tinygo/x-tools/internal/modindex"
 )
 
 // There are two cached packages, both resolving foo.Foo,

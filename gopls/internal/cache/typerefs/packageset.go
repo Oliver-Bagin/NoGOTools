@@ -10,8 +10,8 @@ import (
 	"strings"
 	"sync"
 
-	"golang.org/x/tools/gopls/internal/cache/metadata"
-	"golang.org/x/tools/gopls/internal/util/moremaps"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/cache/metadata"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/util/moremaps"
 )
 
 // PackageIndex stores common data to enable efficient representation of

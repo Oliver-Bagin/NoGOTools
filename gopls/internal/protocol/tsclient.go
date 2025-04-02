@@ -13,7 +13,7 @@ package protocol
 import (
 	"context"
 
-	"golang.org/x/tools/internal/jsonrpc2"
+	"github.com/tinygo-org/tinygo/x-tools/internal/jsonrpc2"
 )
 
 type Client interface {

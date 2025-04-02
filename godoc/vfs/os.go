@@ -6,7 +6,7 @@ package vfs
 
 import (
 	"fmt"
-	"go/build"
+	"github.com/tinygo-org/tinygo/alt_go/build"
 	"io/ioutil"
 	"os"
 	pathpkg "path"

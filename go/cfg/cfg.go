@@ -44,9 +44,9 @@ package cfg
 import (
 	"bytes"
 	"fmt"
-	"go/ast"
-	"go/format"
-	"go/token"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/format"
+	"github.com/tinygo-org/tinygo/alt_go/token"
 )
 
 // A CFG represents the control-flow graph of a single function.

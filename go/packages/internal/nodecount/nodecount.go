@@ -18,12 +18,12 @@ package main
 import (
 	"flag"
 	"fmt"
-	"go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
 	"log"
 	"reflect"
 	"sort"
 
-	"golang.org/x/tools/go/packages"
+	"github.com/tinygo-org/tinygo/x-tools/go/packages"
 )
 
 func main() {

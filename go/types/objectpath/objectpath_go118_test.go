@@ -5,10 +5,10 @@
 package objectpath_test
 
 import (
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"testing"
 
-	"golang.org/x/tools/go/types/objectpath"
+	"github.com/tinygo-org/tinygo/x-tools/go/types/objectpath"
 )
 
 // TODO(adonovan): merge this back into objectpath_test.go.

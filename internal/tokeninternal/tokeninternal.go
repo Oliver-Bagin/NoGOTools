@@ -8,7 +8,7 @@ package tokeninternal
 
 import (
 	"fmt"
-	"go/token"
+	"github.com/tinygo-org/tinygo/alt_go/token"
 	"sort"
 	"sync"
 	"sync/atomic"

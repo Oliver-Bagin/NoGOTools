@@ -5,15 +5,15 @@
 package completion
 
 import (
-	"go/ast"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"strings"
 	"unicode"
 	"unicode/utf8"
 
-	"golang.org/x/tools/gopls/internal/cache/parsego"
-	"golang.org/x/tools/gopls/internal/golang/completion/snippet"
-	"golang.org/x/tools/gopls/internal/protocol"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/cache/parsego"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/golang/completion/snippet"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/protocol"
 )
 
 // some function definitions in test files can be completed

@@ -4,16 +4,16 @@
 
 // Package eg implements the example-based refactoring tool whose
 // command-line is defined in golang.org/x/tools/cmd/eg.
-package eg // import "golang.org/x/tools/refactor/eg"
+package eg // import "github.com/tinygo-org/tinygo/x-tools/refactor/eg"
 
 import (
 	"bytes"
 	"fmt"
-	"go/ast"
-	"go/format"
-	"go/printer"
-	"go/token"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/format"
+	"github.com/tinygo-org/tinygo/alt_go/printer"
+	"github.com/tinygo-org/tinygo/alt_go/token"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"os"
 )
 

@@ -6,13 +6,13 @@ package astutil_test
 
 import (
 	"bytes"
-	"go/ast"
-	"go/format"
-	"go/parser"
-	"go/token"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/format"
+	"github.com/tinygo-org/tinygo/alt_go/parser"
+	"github.com/tinygo-org/tinygo/alt_go/token"
 	"testing"
 
-	"golang.org/x/tools/go/ast/astutil"
+	"github.com/tinygo-org/tinygo/x-tools/go/ast/astutil"
 )
 
 type rewriteTest struct {

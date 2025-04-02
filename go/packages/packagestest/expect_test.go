@@ -5,11 +5,11 @@
 package packagestest_test
 
 import (
-	"go/token"
+	"github.com/tinygo-org/tinygo/alt_go/token"
 	"testing"
 
-	"golang.org/x/tools/go/expect"
-	"golang.org/x/tools/go/packages/packagestest"
+	"github.com/tinygo-org/tinygo/x-tools/go/expect"
+	"github.com/tinygo-org/tinygo/x-tools/go/packages/packagestest"
 )
 
 func TestExpect(t *testing.T) {

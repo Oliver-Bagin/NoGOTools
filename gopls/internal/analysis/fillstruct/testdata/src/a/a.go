@@ -6,8 +6,8 @@ package fillstruct
 
 import (
 	data "b"
-	"go/ast"
-	"go/token"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/token"
 	"unsafe"
 )
 

@@ -15,12 +15,12 @@
 //     like absolute paths w/o a leading '/'; i.e., the paths are considered
 //     relative to the root of the file system.
 //   - All path arguments to file system methods must be absolute paths.
-package zipfs // import "golang.org/x/tools/godoc/vfs/zipfs"
+package zipfs // import "github.com/tinygo-org/tinygo/x-tools/godoc/vfs/zipfs"
 
 import (
 	"archive/zip"
 	"fmt"
-	"go/build"
+	"github.com/tinygo-org/tinygo/alt_go/build"
 	"io"
 	"os"
 	"path"
@@ -29,7 +29,7 @@ import (
 	"strings"
 	"time"
 
-	"golang.org/x/tools/godoc/vfs"
+	"github.com/tinygo-org/tinygo/x-tools/godoc/vfs"
 )
 
 // zipFI is the zip-file based implementation of FileInfo

@@ -5,14 +5,14 @@
 package fingerprint_test
 
 import (
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"testing"
 
-	"golang.org/x/tools/go/packages"
-	"golang.org/x/tools/go/types/typeutil"
-	"golang.org/x/tools/gopls/internal/util/fingerprint"
-	"golang.org/x/tools/internal/testfiles"
-	"golang.org/x/tools/txtar"
+	"github.com/tinygo-org/tinygo/x-tools/go/packages"
+	"github.com/tinygo-org/tinygo/x-tools/go/types/typeutil"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/util/fingerprint"
+	"github.com/tinygo-org/tinygo/x-tools/internal/testfiles"
+	"github.com/tinygo-org/tinygo/x-tools/txtar"
 )
 
 // Test runs the fingerprint encoder, decoder, and printer
@@ -24,7 +24,7 @@ func Test(t *testing.T) {
 	}
 
 	cfg := &packages.Config{Mode: packages.NeedTypes}
-	pkgs, err := packages.Load(cfg, "std", "golang.org/x/tools/gopls/...")
+	pkgs, err := packages.Load(cfg, "std", "github.com/tinygo-org/tinygo/x-tools/gopls/...")
 	if err != nil {
 		t.Fatal(err)
 	}

@@ -120,7 +120,7 @@
 // The version can be arbitrary text, but to pass all.bash's API check, it must
 // contain the substring “devel”. The VERSION file must be created before
 // building either version of the toolchain.
-package main // import "golang.org/x/tools/cmd/toolstash"
+package main // import "github.com/tinygo-org/tinygo/x-tools/cmd/toolstash"
 
 import (
 	"bufio"

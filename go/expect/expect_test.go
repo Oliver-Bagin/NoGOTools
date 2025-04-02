@@ -6,11 +6,11 @@ package expect_test
 
 import (
 	"bytes"
-	"go/token"
+	"github.com/tinygo-org/tinygo/alt_go/token"
 	"os"
 	"testing"
 
-	"golang.org/x/tools/go/expect"
+	"github.com/tinygo-org/tinygo/x-tools/go/expect"
 )
 
 func TestMarker(t *testing.T) {

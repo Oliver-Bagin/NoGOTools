@@ -6,26 +6,26 @@ package gofix
 
 import (
 	"fmt"
-	"go/ast"
-	"go/token"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/token"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"slices"
 	"strings"
 
 	_ "embed"
 
-	"golang.org/x/tools/go/analysis"
-	"golang.org/x/tools/go/analysis/passes/inspect"
-	"golang.org/x/tools/go/ast/inspector"
-	"golang.org/x/tools/go/types/typeutil"
-	"golang.org/x/tools/gopls/internal/util/moreiters"
-	"golang.org/x/tools/internal/analysisinternal"
-	internalastutil "golang.org/x/tools/internal/astutil"
-	"golang.org/x/tools/internal/astutil/cursor"
-	"golang.org/x/tools/internal/astutil/edge"
-	"golang.org/x/tools/internal/diff"
-	"golang.org/x/tools/internal/refactor/inline"
-	"golang.org/x/tools/internal/typesinternal"
+	"github.com/tinygo-org/tinygo/x-tools/go/analysis"
+	"github.com/tinygo-org/tinygo/x-tools/go/analysis/passes/inspect"
+	"github.com/tinygo-org/tinygo/x-tools/go/ast/inspector"
+	"github.com/tinygo-org/tinygo/x-tools/go/types/typeutil"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/util/moreiters"
+	"github.com/tinygo-org/tinygo/x-tools/internal/analysisinternal"
+	internalastutil "github.com/tinygo-org/tinygo/x-tools/internal/astutil"
+	"github.com/tinygo-org/tinygo/x-tools/internal/astutil/cursor"
+	"github.com/tinygo-org/tinygo/x-tools/internal/astutil/edge"
+	"github.com/tinygo-org/tinygo/x-tools/internal/diff"
+	"github.com/tinygo-org/tinygo/x-tools/internal/refactor/inline"
+	"github.com/tinygo-org/tinygo/x-tools/internal/typesinternal"
 )
 
 //go:embed doc.go

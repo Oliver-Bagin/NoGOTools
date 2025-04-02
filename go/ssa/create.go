@@ -9,13 +9,13 @@ package ssa
 
 import (
 	"fmt"
-	"go/ast"
-	"go/token"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/token"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"os"
 	"sync"
 
-	"golang.org/x/tools/internal/versions"
+	"github.com/tinygo-org/tinygo/x-tools/internal/versions"
 )
 
 // NewProgram returns a new SSA Program.

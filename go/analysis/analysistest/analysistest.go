@@ -8,9 +8,9 @@ package analysistest
 import (
 	"bytes"
 	"fmt"
-	"go/format"
-	"go/token"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/format"
+	"github.com/tinygo-org/tinygo/alt_go/token"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"log"
 	"maps"
 	"os"
@@ -24,13 +24,13 @@ import (
 	"testing"
 	"text/scanner"
 
-	"golang.org/x/tools/go/analysis"
-	"golang.org/x/tools/go/analysis/checker"
-	"golang.org/x/tools/go/analysis/internal"
-	"golang.org/x/tools/go/packages"
-	"golang.org/x/tools/internal/diff"
-	"golang.org/x/tools/internal/testenv"
-	"golang.org/x/tools/txtar"
+	"github.com/tinygo-org/tinygo/x-tools/go/analysis"
+	"github.com/tinygo-org/tinygo/x-tools/go/analysis/checker"
+	"github.com/tinygo-org/tinygo/x-tools/go/analysis/internal"
+	"github.com/tinygo-org/tinygo/x-tools/go/packages"
+	"github.com/tinygo-org/tinygo/x-tools/internal/diff"
+	"github.com/tinygo-org/tinygo/x-tools/internal/testenv"
+	"github.com/tinygo-org/tinygo/x-tools/txtar"
 )
 
 // WriteFiles is a helper function that creates a temporary directory

@@ -74,18 +74,18 @@ import (
 	"bytes"
 	"flag"
 	"fmt"
-	"go/ast"
-	"go/format"
-	"go/printer"
-	"go/token"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/format"
+	"github.com/tinygo-org/tinygo/alt_go/printer"
+	"github.com/tinygo-org/tinygo/alt_go/token"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"log"
 	"os"
 	"strconv"
 	"strings"
 	"unicode"
 
-	"golang.org/x/tools/go/packages"
+	"github.com/tinygo-org/tinygo/x-tools/go/packages"
 )
 
 var (

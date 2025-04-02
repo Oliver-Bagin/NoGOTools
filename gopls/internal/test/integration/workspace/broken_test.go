@@ -8,8 +8,8 @@ import (
 	"strings"
 	"testing"
 
-	"golang.org/x/tools/gopls/internal/server"
-	. "golang.org/x/tools/gopls/internal/test/integration"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/server"
+	. "github.com/tinygo-org/tinygo/x-tools/gopls/internal/test/integration"
 )
 
 // This file holds various tests for UX with respect to broken workspaces.

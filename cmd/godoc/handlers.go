@@ -6,16 +6,16 @@ package main
 
 import (
 	"encoding/json"
-	"go/format"
+	"github.com/tinygo-org/tinygo/alt_go/format"
 	"log"
 	"net/http"
 	"text/template"
 
-	"golang.org/x/tools/godoc"
-	"golang.org/x/tools/godoc/redirect"
-	"golang.org/x/tools/godoc/vfs"
+	"github.com/tinygo-org/tinygo/x-tools/godoc"
+	"github.com/tinygo-org/tinygo/x-tools/godoc/redirect"
+	"github.com/tinygo-org/tinygo/x-tools/godoc/vfs"
 
-	_ "golang.org/x/tools/playground" // register "/compile" playground redirect
+	_ "github.com/tinygo-org/tinygo/x-tools/playground" // register "/compile" playground redirect
 )
 
 var (

@@ -10,10 +10,10 @@ import (
 	"testing"
 	"time"
 
-	"golang.org/x/tools/gopls/internal/protocol"
-	"golang.org/x/tools/gopls/internal/protocol/command"
-	. "golang.org/x/tools/gopls/internal/test/integration"
-	"golang.org/x/tools/gopls/internal/test/integration/fake"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/protocol"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/protocol/command"
+	. "github.com/tinygo-org/tinygo/x-tools/gopls/internal/test/integration"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/test/integration/fake"
 )
 
 var gopath = flag.String("gopath", "", "if set, run goimports scan with this GOPATH value")

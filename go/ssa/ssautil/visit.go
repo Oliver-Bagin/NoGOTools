@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-package ssautil // import "golang.org/x/tools/go/ssa/ssautil"
+package ssautil // import "github.com/tinygo-org/tinygo/x-tools/go/ssa/ssautil"
 
 import (
-	"go/ast"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 
-	"golang.org/x/tools/go/ssa"
+	"github.com/tinygo-org/tinygo/x-tools/go/ssa"
 
 	_ "unsafe" // for linkname hack
 )

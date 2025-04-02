@@ -2,16 +2,16 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-// Package imports implements a Go pretty-printer (like package "go/format")
+// Package imports implements a Go pretty-printer (like package "github.com/tinygo-org/tinygo/alt_go/format")
 // that also adds or removes import statements as necessary.
-package imports // import "golang.org/x/tools/imports"
+package imports // import "github.com/tinygo-org/tinygo/x-tools/imports"
 
 import (
 	"log"
 	"os"
 
-	"golang.org/x/tools/internal/gocommand"
-	intimp "golang.org/x/tools/internal/imports"
+	"github.com/tinygo-org/tinygo/x-tools/internal/gocommand"
+	intimp "github.com/tinygo-org/tinygo/x-tools/internal/imports"
 )
 
 // Options specifies options for processing files.

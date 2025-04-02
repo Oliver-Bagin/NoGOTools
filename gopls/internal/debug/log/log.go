@@ -10,9 +10,9 @@ import (
 	"context"
 	"fmt"
 
-	label1 "golang.org/x/tools/gopls/internal/label"
-	"golang.org/x/tools/internal/event"
-	"golang.org/x/tools/internal/event/label"
+	label1 "github.com/tinygo-org/tinygo/x-tools/gopls/internal/label"
+	"github.com/tinygo-org/tinygo/x-tools/internal/event"
+	"github.com/tinygo-org/tinygo/x-tools/internal/event/label"
 )
 
 // Level parameterizes log severity.

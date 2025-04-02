@@ -40,12 +40,12 @@ package ssa
 
 import (
 	"fmt"
-	"go/token"
+	"github.com/tinygo-org/tinygo/alt_go/token"
 	"math/big"
 	"os"
 	"slices"
 
-	"golang.org/x/tools/internal/typeparams"
+	"github.com/tinygo-org/tinygo/x-tools/internal/typeparams"
 )
 
 // If true, show diagnostic information at each step of lifting.

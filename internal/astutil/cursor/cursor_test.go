@@ -8,10 +8,10 @@ package cursor_test
 
 import (
 	"fmt"
-	"go/ast"
-	"go/build"
-	"go/parser"
-	"go/token"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/build"
+	"github.com/tinygo-org/tinygo/alt_go/parser"
+	"github.com/tinygo-org/tinygo/alt_go/token"
 	"iter"
 	"log"
 	"math/rand"
@@ -21,9 +21,9 @@ import (
 	"strings"
 	"testing"
 
-	"golang.org/x/tools/go/ast/inspector"
-	"golang.org/x/tools/internal/astutil/cursor"
-	"golang.org/x/tools/internal/astutil/edge"
+	"github.com/tinygo-org/tinygo/x-tools/go/ast/inspector"
+	"github.com/tinygo-org/tinygo/x-tools/internal/astutil/cursor"
+	"github.com/tinygo-org/tinygo/x-tools/internal/astutil/edge"
 )
 
 // net/http package

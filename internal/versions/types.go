@@ -5,8 +5,8 @@
 package versions
 
 import (
-	"go/ast"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 )
 
 // FileVersion returns a file's Go version.

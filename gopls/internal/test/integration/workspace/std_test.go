@@ -12,7 +12,7 @@ import (
 	"strings"
 	"testing"
 
-	. "golang.org/x/tools/gopls/internal/test/integration"
+	. "github.com/tinygo-org/tinygo/x-tools/gopls/internal/test/integration"
 )
 
 func TestStdWorkspace(t *testing.T) {
@@ -68,7 +68,7 @@ func TestStdWorkspace(t *testing.T) {
 		// a reference in go/types.
 		foundGoTypesReference := false
 		for _, ref := range refs {
-			if strings.Contains(string(ref.URI), "go/types") {
+			if strings.Contains(string(ref.URI), "github.com/tinygo-org/tinygo/alt_go/types") {
 				foundGoTypesReference = true
 			}
 		}

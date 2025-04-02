@@ -20,15 +20,15 @@
 // Since CHA conservatively assumes that all functions are address-taken
 // and all concrete types are put into interfaces, it is sound to run on
 // partial programs, such as libraries without a main or test function.
-package cha // import "golang.org/x/tools/go/callgraph/cha"
+package cha // import "github.com/tinygo-org/tinygo/x-tools/go/callgraph/cha"
 
 // TODO(zpavlinovic): update CHA for how it handles generic function bodies.
 
 import (
-	"golang.org/x/tools/go/callgraph"
-	"golang.org/x/tools/go/callgraph/internal/chautil"
-	"golang.org/x/tools/go/ssa"
-	"golang.org/x/tools/go/ssa/ssautil"
+	"github.com/tinygo-org/tinygo/x-tools/go/callgraph"
+	"github.com/tinygo-org/tinygo/x-tools/go/callgraph/internal/chautil"
+	"github.com/tinygo-org/tinygo/x-tools/go/ssa"
+	"github.com/tinygo-org/tinygo/x-tools/go/ssa/ssautil"
 )
 
 // CallGraph computes the call graph of the specified program using the

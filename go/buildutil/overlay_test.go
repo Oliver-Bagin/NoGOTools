@@ -5,13 +5,13 @@
 package buildutil_test
 
 import (
-	"go/build"
+	"github.com/tinygo-org/tinygo/alt_go/build"
 	"io"
 	"reflect"
 	"strings"
 	"testing"
 
-	"golang.org/x/tools/go/buildutil"
+	"github.com/tinygo-org/tinygo/x-tools/go/buildutil"
 )
 
 func TestParseOverlayArchive(t *testing.T) {

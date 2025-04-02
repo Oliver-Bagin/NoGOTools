@@ -11,7 +11,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"golang.org/x/tools/gopls/internal/protocol"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/protocol"
 )
 
 // TestURIFromPath tests the conversion between URIs and filenames. The test cases

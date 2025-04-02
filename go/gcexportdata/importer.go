@@ -6,8 +6,8 @@ package gcexportdata
 
 import (
 	"fmt"
-	"go/token"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/token"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"os"
 )
 

@@ -8,9 +8,9 @@ import (
 	"iter"
 	"path/filepath"
 
-	"golang.org/x/tools/gopls/internal/file"
-	"golang.org/x/tools/gopls/internal/protocol"
-	"golang.org/x/tools/gopls/internal/util/persistent"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/file"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/protocol"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/util/persistent"
 )
 
 // A fileMap maps files in the snapshot, with some additional bookkeeping:

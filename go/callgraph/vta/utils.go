@@ -5,11 +5,11 @@
 package vta
 
 import (
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"iter"
 
-	"golang.org/x/tools/go/ssa"
-	"golang.org/x/tools/internal/typeparams"
+	"github.com/tinygo-org/tinygo/x-tools/go/ssa"
+	"github.com/tinygo-org/tinygo/x-tools/internal/typeparams"
 )
 
 func canAlias(n1, n2 node) bool {

@@ -58,7 +58,7 @@ package expect
 import (
 	"bytes"
 	"fmt"
-	"go/token"
+	"github.com/tinygo-org/tinygo/alt_go/token"
 	"regexp"
 )
 

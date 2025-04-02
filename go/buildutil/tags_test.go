@@ -7,14 +7,14 @@ package buildutil_test
 import (
 	"bytes"
 	"flag"
-	"go/build"
+	"github.com/tinygo-org/tinygo/alt_go/build"
 	"os/exec"
 	"reflect"
 	"strings"
 	"testing"
 
-	"golang.org/x/tools/go/buildutil"
-	"golang.org/x/tools/internal/testenv"
+	"github.com/tinygo-org/tinygo/x-tools/go/buildutil"
+	"github.com/tinygo-org/tinygo/x-tools/internal/testenv"
 )
 
 func TestTags(t *testing.T) {

@@ -17,13 +17,13 @@ import (
 	"bytes"
 	"debug/elf"
 	"fmt"
-	"go/token"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/token"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"io"
 	"strconv"
 	"strings"
 
-	"golang.org/x/tools/go/internal/gccgoimporter"
+	"github.com/tinygo-org/tinygo/x-tools/go/internal/gccgoimporter"
 )
 
 // CompilerInfo executes the specified gccgo compiler and returns

@@ -26,17 +26,17 @@ import (
 	"sync"
 	"time"
 
-	"golang.org/x/tools/gopls/internal/cache/typerefs"
-	"golang.org/x/tools/gopls/internal/file"
-	"golang.org/x/tools/gopls/internal/protocol"
-	"golang.org/x/tools/gopls/internal/settings"
-	"golang.org/x/tools/gopls/internal/util/moremaps"
-	"golang.org/x/tools/gopls/internal/util/pathutil"
-	"golang.org/x/tools/gopls/internal/vulncheck"
-	"golang.org/x/tools/internal/event"
-	"golang.org/x/tools/internal/gocommand"
-	"golang.org/x/tools/internal/imports"
-	"golang.org/x/tools/internal/xcontext"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/cache/typerefs"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/file"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/protocol"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/settings"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/util/moremaps"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/util/pathutil"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/vulncheck"
+	"github.com/tinygo-org/tinygo/x-tools/internal/event"
+	"github.com/tinygo-org/tinygo/x-tools/internal/gocommand"
+	"github.com/tinygo-org/tinygo/x-tools/internal/imports"
+	"github.com/tinygo-org/tinygo/x-tools/internal/xcontext"
 )
 
 // A Folder represents an LSP workspace folder, together with its per-folder

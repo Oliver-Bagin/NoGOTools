@@ -20,14 +20,14 @@ import (
 	"sync"
 	"time"
 
-	"golang.org/x/tools/gopls/internal/protocol"
-	"golang.org/x/tools/gopls/internal/protocol/command"
-	"golang.org/x/tools/gopls/internal/test/integration/fake/glob"
-	"golang.org/x/tools/gopls/internal/util/bug"
-	"golang.org/x/tools/gopls/internal/util/pathutil"
-	"golang.org/x/tools/internal/jsonrpc2"
-	"golang.org/x/tools/internal/jsonrpc2/servertest"
-	"golang.org/x/tools/internal/xcontext"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/protocol"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/protocol/command"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/test/integration/fake/glob"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/util/bug"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/util/pathutil"
+	"github.com/tinygo-org/tinygo/x-tools/internal/jsonrpc2"
+	"github.com/tinygo-org/tinygo/x-tools/internal/jsonrpc2/servertest"
+	"github.com/tinygo-org/tinygo/x-tools/internal/xcontext"
 )
 
 // Editor is a fake client editor.  It keeps track of client state and can be

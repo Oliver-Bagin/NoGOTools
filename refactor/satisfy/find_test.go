@@ -6,16 +6,16 @@ package satisfy_test
 
 import (
 	"fmt"
-	"go/ast"
-	"go/importer"
-	"go/parser"
-	"go/token"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/importer"
+	"github.com/tinygo-org/tinygo/alt_go/parser"
+	"github.com/tinygo-org/tinygo/alt_go/token"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"reflect"
 	"sort"
 	"testing"
 
-	"golang.org/x/tools/refactor/satisfy"
+	"github.com/tinygo-org/tinygo/x-tools/refactor/satisfy"
 )
 
 // This test exercises various operations on core types of type parameters.

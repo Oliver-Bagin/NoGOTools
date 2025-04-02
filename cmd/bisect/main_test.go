@@ -9,16 +9,16 @@ import (
 	"encoding/json"
 	"flag"
 	"fmt"
-	"go/build/constraint"
+	"github.com/tinygo-org/tinygo/alt_go/build/constraint"
 	"math/rand"
 	"os"
 	"path/filepath"
 	"strings"
 	"testing"
 
-	"golang.org/x/tools/internal/bisect"
-	"golang.org/x/tools/internal/diffp"
-	"golang.org/x/tools/txtar"
+	"github.com/tinygo-org/tinygo/x-tools/internal/bisect"
+	"github.com/tinygo-org/tinygo/x-tools/internal/diffp"
+	"github.com/tinygo-org/tinygo/x-tools/txtar"
 )
 
 var update = flag.Bool("update", false, "update testdata with new stdout/stderr")

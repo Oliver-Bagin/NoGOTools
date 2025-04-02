@@ -6,16 +6,16 @@ package versions_test
 
 import (
 	"fmt"
-	"go/ast"
-	"go/importer"
-	"go/parser"
-	"go/token"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/importer"
+	"github.com/tinygo-org/tinygo/alt_go/parser"
+	"github.com/tinygo-org/tinygo/alt_go/token"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"strings"
 	"testing"
 
-	"golang.org/x/tools/internal/testenv"
-	"golang.org/x/tools/internal/versions"
+	"github.com/tinygo-org/tinygo/x-tools/internal/testenv"
+	"github.com/tinygo-org/tinygo/x-tools/internal/versions"
 )
 
 var contents = map[string]string{

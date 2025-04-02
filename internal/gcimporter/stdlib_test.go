@@ -7,15 +7,15 @@ package gcimporter_test
 import (
 	"bytes"
 	"fmt"
-	"go/token"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/token"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"runtime"
 	"testing"
 	"unsafe"
 
-	"golang.org/x/tools/go/gcexportdata"
-	"golang.org/x/tools/go/packages"
-	"golang.org/x/tools/internal/testenv"
+	"github.com/tinygo-org/tinygo/x-tools/go/gcexportdata"
+	"github.com/tinygo-org/tinygo/x-tools/go/packages"
+	"github.com/tinygo-org/tinygo/x-tools/internal/testenv"
 )
 
 // TestStdlib ensures that all packages in std and x/tools can be
@@ -44,7 +44,7 @@ func testStdlib(t *testing.T) {
 		// The go_.*_exec script for mobile builders only copies over the source tree
 		// for the package under test.
 	default:
-		patterns = append(patterns, "golang.org/x/tools/...")
+		patterns = append(patterns, "github.com/tinygo-org/tinygo/x-tools/...")
 		minPkgs += 160 // At the time of writing, 'GOOS=plan9 go list ./... | wc -l' reports 188.
 	}
 	pkgs, err := packages.Load(cfg, patterns...)

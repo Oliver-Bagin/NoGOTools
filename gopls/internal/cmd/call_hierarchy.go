@@ -10,8 +10,8 @@ import (
 	"fmt"
 	"strings"
 
-	"golang.org/x/tools/gopls/internal/protocol"
-	"golang.org/x/tools/internal/tool"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/protocol"
+	"github.com/tinygo-org/tinygo/x-tools/internal/tool"
 )
 
 // callHierarchy implements the callHierarchy verb for gopls.

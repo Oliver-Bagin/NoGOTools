@@ -36,10 +36,10 @@ package inspector
 // and found to degrade performance significantly (30%).
 
 import (
-	"go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
 	_ "unsafe"
 
-	"golang.org/x/tools/internal/astutil/edge"
+	"github.com/tinygo-org/tinygo/x-tools/internal/astutil/edge"
 )
 
 // An Inspector provides methods for inspecting

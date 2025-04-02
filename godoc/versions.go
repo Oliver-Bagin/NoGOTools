@@ -9,7 +9,7 @@ package godoc
 
 import (
 	"bufio"
-	"go/build"
+	"github.com/tinygo-org/tinygo/alt_go/build"
 	"log"
 	"os"
 	"path/filepath"

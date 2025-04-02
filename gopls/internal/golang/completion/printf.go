@@ -5,9 +5,9 @@
 package completion
 
 import (
-	"go/ast"
-	"go/constant"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/constant"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"strconv"
 	"strings"
 	"unicode/utf8"

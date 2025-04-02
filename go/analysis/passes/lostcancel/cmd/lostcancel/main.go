@@ -7,8 +7,8 @@
 package main
 
 import (
-	"golang.org/x/tools/go/analysis/passes/lostcancel"
-	"golang.org/x/tools/go/analysis/singlechecker"
+	"github.com/tinygo-org/tinygo/x-tools/go/analysis/passes/lostcancel"
+	"github.com/tinygo-org/tinygo/x-tools/go/analysis/singlechecker"
 )
 
 func main() { singlechecker.Main(lostcancel.Analyzer) }

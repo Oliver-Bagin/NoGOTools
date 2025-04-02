@@ -14,12 +14,12 @@ import (
 	"bytes"
 	"errors"
 	"fmt"
-	"go/ast"
-	"go/build"
-	"go/format"
-	"go/parser"
-	"go/token"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/build"
+	"github.com/tinygo-org/tinygo/alt_go/format"
+	"github.com/tinygo-org/tinygo/alt_go/parser"
+	"github.com/tinygo-org/tinygo/alt_go/token"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"io"
 	"log"
 	"os"
@@ -30,10 +30,10 @@ import (
 	"strconv"
 	"strings"
 
-	"golang.org/x/tools/go/loader"
-	"golang.org/x/tools/go/types/typeutil"
-	"golang.org/x/tools/refactor/importgraph"
-	"golang.org/x/tools/refactor/satisfy"
+	"github.com/tinygo-org/tinygo/x-tools/go/loader"
+	"github.com/tinygo-org/tinygo/x-tools/go/types/typeutil"
+	"github.com/tinygo-org/tinygo/x-tools/refactor/importgraph"
+	"github.com/tinygo-org/tinygo/x-tools/refactor/satisfy"
 )
 
 const Usage = `gorename: precise type-safe renaming of identifiers in Go source code.

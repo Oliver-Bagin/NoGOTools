@@ -6,10 +6,10 @@ package golang
 
 import (
 	"errors"
-	"go/ast"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 
-	"golang.org/x/tools/internal/typesinternal"
+	"github.com/tinygo-org/tinygo/x-tools/internal/typesinternal"
 )
 
 // ErrNoIdentFound is error returned when no identifier is found at a particular position

@@ -6,19 +6,19 @@ package cache
 
 import (
 	"fmt"
-	"go/ast"
-	"go/scanner"
-	"go/token"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/scanner"
+	"github.com/tinygo-org/tinygo/alt_go/token"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"slices"
 	"sync"
 
-	"golang.org/x/tools/gopls/internal/cache/metadata"
-	"golang.org/x/tools/gopls/internal/cache/methodsets"
-	"golang.org/x/tools/gopls/internal/cache/parsego"
-	"golang.org/x/tools/gopls/internal/cache/testfuncs"
-	"golang.org/x/tools/gopls/internal/cache/xrefs"
-	"golang.org/x/tools/gopls/internal/protocol"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/cache/metadata"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/cache/methodsets"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/cache/parsego"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/cache/testfuncs"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/cache/xrefs"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/protocol"
 )
 
 // Convenient aliases for very heavily used types.

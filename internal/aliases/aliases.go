@@ -5,8 +5,8 @@
 package aliases
 
 import (
-	"go/token"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/token"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 )
 
 // Package aliases defines backward compatible shims

@@ -10,7 +10,7 @@ import (
 
 // Note: If we use build tags to use go/versions when go >=1.22,
 // we run into go.dev/issue/53737. Under some operations users would see an
-// import of "go/versions" even if they would not compile the file.
+// import of "github.com/tinygo-org/tinygo/alt_go/versions" even if they would not compile the file.
 // For example, during `go get -u ./...` (go.dev/issue/64490) we do not try to include
 // For this reason, this library just a clone of go/versions for the moment.
 

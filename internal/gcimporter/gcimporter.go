@@ -19,13 +19,13 @@
 // the details of its internal representation. Because of these
 // differences, re-encoding the imported package may yield a
 // different, but equally valid, encoding of the package.
-package gcimporter // import "golang.org/x/tools/internal/gcimporter"
+package gcimporter // import "github.com/tinygo-org/tinygo/x-tools/internal/gcimporter"
 
 import (
 	"bufio"
 	"fmt"
-	"go/token"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/token"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"io"
 	"os"
 )

@@ -12,9 +12,9 @@ import (
 	"bytes"
 	"flag"
 	"fmt"
-	"go/constant"
-	"go/format"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/constant"
+	"github.com/tinygo-org/tinygo/alt_go/format"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"os"
 	"path/filepath"
 	"runtime"
@@ -22,11 +22,11 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"golang.org/x/tools/go/packages"
-	"golang.org/x/tools/internal/testenv"
-	"golang.org/x/tools/internal/testfiles"
-	"golang.org/x/tools/refactor/eg"
-	"golang.org/x/tools/txtar"
+	"github.com/tinygo-org/tinygo/x-tools/go/packages"
+	"github.com/tinygo-org/tinygo/x-tools/internal/testenv"
+	"github.com/tinygo-org/tinygo/x-tools/internal/testfiles"
+	"github.com/tinygo-org/tinygo/x-tools/refactor/eg"
+	"github.com/tinygo-org/tinygo/x-tools/txtar"
 )
 
 // TODO(adonovan): more tests:

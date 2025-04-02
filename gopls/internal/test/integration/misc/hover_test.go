@@ -11,9 +11,9 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"golang.org/x/tools/gopls/internal/protocol"
-	. "golang.org/x/tools/gopls/internal/test/integration"
-	"golang.org/x/tools/gopls/internal/test/integration/fake"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/protocol"
+	. "github.com/tinygo-org/tinygo/x-tools/gopls/internal/test/integration"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/test/integration/fake"
 )
 
 func TestHoverUnexported(t *testing.T) {
@@ -358,7 +358,7 @@ var C int
 	}{
 		{"A", "fmt"},
 		{"B", "fmt#Println"},
-		{"C", "golang.org/x/tools/go/packages#Package.String"},
+		{"C", "github.com/tinygo-org/tinygo/x-tools/go/packages#Package.String"},
 	}
 	for _, test := range tests {
 		Run(t, input, func(t *testing.T, env *Env) {
@@ -662,7 +662,7 @@ import "fmt"
 import "context"
 import "crypto"
 import "regexp"
-import "go/doc/comment"
+import "github.com/tinygo-org/tinygo/alt_go/doc/comment"
 
 type testRegexp = *regexp.Regexp
 

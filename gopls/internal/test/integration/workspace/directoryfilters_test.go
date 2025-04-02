@@ -9,7 +9,7 @@ import (
 	"strings"
 	"testing"
 
-	. "golang.org/x/tools/gopls/internal/test/integration"
+	. "github.com/tinygo-org/tinygo/x-tools/gopls/internal/test/integration"
 )
 
 // This file contains regression tests for the directoryFilters setting.

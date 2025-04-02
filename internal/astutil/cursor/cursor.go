@@ -16,14 +16,14 @@ package cursor
 
 import (
 	"fmt"
-	"go/ast"
-	"go/token"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/token"
 	"iter"
 	"reflect"
 	"slices"
 
-	"golang.org/x/tools/go/ast/inspector"
-	"golang.org/x/tools/internal/astutil/edge"
+	"github.com/tinygo-org/tinygo/x-tools/go/ast/inspector"
+	"github.com/tinygo-org/tinygo/x-tools/internal/astutil/edge"
 )
 
 // A Cursor represents an [ast.Node]. It is immutable.

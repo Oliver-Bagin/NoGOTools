@@ -20,7 +20,7 @@
 //	godex go/types
 //
 // godex automatically tries all possible package path prefixes if only a
-// partial package path is given. For instance, for the path "go/types",
+// partial package path is given. For instance, for the path "github.com/tinygo-org/tinygo/alt_go/types",
 // godex prepends "golang.org/x/tools".
 //
 // The prefixes are computed by searching the directories specified by
@@ -62,7 +62,7 @@
 //		(uncompiled) source code (not yet implemented)
 //
 // If no -s argument is provided, godex will try to find a matching source.
-package main // import "golang.org/x/tools/cmd/godex"
+package main // import "github.com/tinygo-org/tinygo/x-tools/cmd/godex"
 
 // BUG(gri): support for -s=source is not yet implemented
 // BUG(gri): gccgo-importing appears to have occasional problems stalling godex; try -s=gc as work-around

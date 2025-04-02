@@ -25,7 +25,7 @@ import (
 	_ "expvar" // to serve /debug/vars
 	"flag"
 	"fmt"
-	"go/build"
+	"github.com/tinygo-org/tinygo/alt_go/build"
 	"io"
 	"log"
 	"net/http"
@@ -39,13 +39,13 @@ import (
 	"runtime"
 	"strings"
 
-	"golang.org/x/tools/godoc"
-	"golang.org/x/tools/godoc/static"
-	"golang.org/x/tools/godoc/vfs"
-	"golang.org/x/tools/godoc/vfs/gatefs"
-	"golang.org/x/tools/godoc/vfs/mapfs"
-	"golang.org/x/tools/godoc/vfs/zipfs"
-	"golang.org/x/tools/internal/gocommand"
+	"github.com/tinygo-org/tinygo/x-tools/godoc"
+	"github.com/tinygo-org/tinygo/x-tools/godoc/static"
+	"github.com/tinygo-org/tinygo/x-tools/godoc/vfs"
+	"github.com/tinygo-org/tinygo/x-tools/godoc/vfs/gatefs"
+	"github.com/tinygo-org/tinygo/x-tools/godoc/vfs/mapfs"
+	"github.com/tinygo-org/tinygo/x-tools/godoc/vfs/zipfs"
+	"github.com/tinygo-org/tinygo/x-tools/internal/gocommand"
 )
 
 const defaultAddr = "localhost:6060" // default webserver address

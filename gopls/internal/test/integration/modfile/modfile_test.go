@@ -11,11 +11,11 @@ import (
 	"strings"
 	"testing"
 
-	"golang.org/x/tools/gopls/internal/test/compare"
-	. "golang.org/x/tools/gopls/internal/test/integration"
-	"golang.org/x/tools/gopls/internal/util/bug"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/test/compare"
+	. "github.com/tinygo-org/tinygo/x-tools/gopls/internal/test/integration"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/util/bug"
 
-	"golang.org/x/tools/gopls/internal/protocol"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/protocol"
 )
 
 func TestMain(m *testing.M) {

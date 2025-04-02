@@ -9,8 +9,8 @@ import (
 	"sort"
 	"time"
 
-	"golang.org/x/tools/internal/event/keys"
-	"golang.org/x/tools/internal/event/label"
+	"github.com/tinygo-org/tinygo/x-tools/internal/event/keys"
+	"github.com/tinygo-org/tinygo/x-tools/internal/event/label"
 )
 
 // Data represents a single point in the time series of a metric.

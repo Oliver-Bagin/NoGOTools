@@ -107,7 +107,7 @@ that is a descendant of this directory, it must use an absolute path
 that has the value of PWD as a prefix, to ensure that the returned
 filenames satisfy the original query.
 */
-package packages // import "golang.org/x/tools/go/packages"
+package packages // import "github.com/tinygo-org/tinygo/x-tools/go/packages"
 
 /*
 

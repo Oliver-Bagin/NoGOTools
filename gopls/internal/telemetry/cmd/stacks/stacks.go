@@ -67,9 +67,9 @@ import (
 	"encoding/json"
 	"flag"
 	"fmt"
-	"go/ast"
-	"go/parser"
-	"go/token"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/parser"
+	"github.com/tinygo-org/tinygo/alt_go/token"
 	"hash/fnv"
 	"io"
 	"log"
@@ -90,14 +90,14 @@ import (
 	"golang.org/x/mod/semver"
 	"golang.org/x/sys/unix"
 	"golang.org/x/telemetry"
-	"golang.org/x/tools/gopls/internal/util/browser"
-	"golang.org/x/tools/gopls/internal/util/moremaps"
-	"golang.org/x/tools/gopls/internal/util/morestrings"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/util/browser"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/util/moremaps"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/util/morestrings"
 )
 
 // flags
 var (
-	programFlag = flag.String("program", "golang.org/x/tools/gopls", "Package path of program to process")
+	programFlag = flag.String("program", "github.com/tinygo-org/tinygo/x-tools/gopls", "Package path of program to process")
 
 	daysFlag = flag.Int("days", 7, "number of previous days of telemetry data to read")
 
@@ -136,8 +136,8 @@ type ProgramConfig struct {
 }
 
 var programs = map[string]ProgramConfig{
-	"golang.org/x/tools/gopls": {
-		Program:        "golang.org/x/tools/gopls",
+	"github.com/tinygo-org/tinygo/x-tools/gopls": {
+		Program:        "github.com/tinygo-org/tinygo/x-tools/gopls",
 		IncludeClient:  true,
 		SearchLabel:    "gopls/telemetry-wins",
 		NewIssuePrefix: "x/tools/gopls",
@@ -147,7 +147,7 @@ var programs = map[string]ProgramConfig{
 			"gopls/telemetry-wins",
 			"NeedsInvestigation",
 		},
-		MatchSymbolPrefix: "golang.org/x/tools/gopls/",
+		MatchSymbolPrefix: "github.com/tinygo-org/tinygo/x-tools/gopls/",
 		IgnoreSymbolContains: []string{
 			"internal/util/bug.",
 			"internal/bug.", // former name in gopls/0.14.2
@@ -292,11 +292,11 @@ func main() {
 // Info is used as a key for de-duping and aggregating.
 // Do not add detail about particular records (e.g. data, telemetry URL).
 type Info struct {
-	Program        string // "golang.org/x/tools/gopls"
+	Program        string // "github.com/tinygo-org/tinygo/x-tools/gopls"
 	ProgramVersion string // "v0.16.1"
 	GoVersion      string // "go1.23"
 	GOOS, GOARCH   string
-	GoplsClient    string // e.g. "vscode" (only set if Program == "golang.org/x/tools/gopls")
+	GoplsClient    string // e.g. "vscode" (only set if Program == "github.com/tinygo-org/tinygo/x-tools/gopls")
 }
 
 func (info Info) String() string {
@@ -833,7 +833,7 @@ func writeStackComment(body *bytes.Buffer, stack, id string, jsonURL string, cou
 
 // frameURL returns the CodeSearch URL for the stack frame, if known.
 func frameURL(pclntab map[string]FileLine, info Info, frame string) string {
-	// e.g. "golang.org/x/tools/gopls/foo.(*Type).Method.inlined.func3:+5"
+	// e.g. "github.com/tinygo-org/tinygo/x-tools/gopls/foo.(*Type).Method.inlined.func3:+5"
 	symbol, offset, ok := strings.Cut(frame, ":")
 	if !ok {
 		// Not a symbol (perhaps stack counter title: "gopls/bug"?)
@@ -888,7 +888,7 @@ func frameURL(pclntab map[string]FileLine, info Info, frame string) string {
 	// x/tools repo (tools or gopls module)?
 	if rest, ok := strings.CutPrefix(fileline.file, "golang.org/x/tools"); ok {
 		if rest[0] == '/' {
-			// "golang.org/x/tools/gopls" -> "gopls"
+			// "github.com/tinygo-org/tinygo/x-tools/gopls" -> "gopls"
 			rest = rest[1:]
 		} else if rest[0] == '@' {
 			// "golang.org/x/tools@version/dir/file.go" -> "dir/file.go"
@@ -1137,7 +1137,7 @@ func readPCLineTable(info Info, stacksDir string) (map[string]FileLine, error) {
 	// appropriate version.
 	var buildDir string
 	switch info.Program {
-	case "golang.org/x/tools/gopls":
+	case "github.com/tinygo-org/tinygo/x-tools/gopls":
 		// Fetch the source for the tools repo,
 		// shallow-cloning just the desired revision.
 		// (Skip if it's already cloned.)

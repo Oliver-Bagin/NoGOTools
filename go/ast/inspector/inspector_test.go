@@ -5,10 +5,10 @@
 package inspector_test
 
 import (
-	"go/ast"
-	"go/build"
-	"go/parser"
-	"go/token"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/build"
+	"github.com/tinygo-org/tinygo/alt_go/parser"
+	"github.com/tinygo-org/tinygo/alt_go/token"
 	"log"
 	"path/filepath"
 	"reflect"
@@ -16,7 +16,7 @@ import (
 	"strings"
 	"testing"
 
-	"golang.org/x/tools/go/ast/inspector"
+	"github.com/tinygo-org/tinygo/x-tools/go/ast/inspector"
 )
 
 var netFiles []*ast.File

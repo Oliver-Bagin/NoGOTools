@@ -11,9 +11,9 @@ package ssa
 // the originating syntax, as specified.
 
 import (
-	"go/ast"
-	"go/token"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/token"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 )
 
 // EnclosingFunction returns the function that contains the syntax

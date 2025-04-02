@@ -39,15 +39,15 @@ import (
 	"bytes"
 	"encoding/gob"
 	"fmt"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"io"
 	"log"
 	"reflect"
 	"sort"
 	"sync"
 
-	"golang.org/x/tools/go/analysis"
-	"golang.org/x/tools/go/types/objectpath"
+	"github.com/tinygo-org/tinygo/x-tools/go/analysis"
+	"github.com/tinygo-org/tinygo/x-tools/go/types/objectpath"
 )
 
 const debug = false

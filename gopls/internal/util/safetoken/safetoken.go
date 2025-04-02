@@ -13,7 +13,7 @@ package safetoken
 
 import (
 	"fmt"
-	"go/token"
+	"github.com/tinygo-org/tinygo/alt_go/token"
 )
 
 // Offset returns f.Offset(pos), but first checks that the file

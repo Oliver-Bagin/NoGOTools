@@ -18,8 +18,8 @@ package interp_test
 import (
 	"bytes"
 	"fmt"
-	"go/build"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/build"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"io"
 	"os"
 	"path/filepath"
@@ -29,11 +29,11 @@ import (
 	"time"
 	"unsafe"
 
-	"golang.org/x/tools/go/loader"
-	"golang.org/x/tools/go/ssa"
-	"golang.org/x/tools/go/ssa/interp"
-	"golang.org/x/tools/go/ssa/ssautil"
-	"golang.org/x/tools/internal/testenv"
+	"github.com/tinygo-org/tinygo/x-tools/go/loader"
+	"github.com/tinygo-org/tinygo/x-tools/go/ssa"
+	"github.com/tinygo-org/tinygo/x-tools/go/ssa/interp"
+	"github.com/tinygo-org/tinygo/x-tools/go/ssa/ssautil"
+	"github.com/tinygo-org/tinygo/x-tools/internal/testenv"
 )
 
 // Each line contains a space-separated list of $GOROOT/test/

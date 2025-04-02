@@ -9,10 +9,10 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"go/ast"
-	"go/build"
-	"go/doc"
-	"go/token"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/build"
+	"github.com/tinygo-org/tinygo/alt_go/doc"
+	"github.com/tinygo-org/tinygo/alt_go/token"
 	htmlpkg "html"
 	htmltemplate "html/template"
 	"io"
@@ -26,9 +26,9 @@ import (
 	"text/template"
 	"time"
 
-	"golang.org/x/tools/godoc/analysis"
-	"golang.org/x/tools/godoc/util"
-	"golang.org/x/tools/godoc/vfs"
+	"github.com/tinygo-org/tinygo/x-tools/godoc/analysis"
+	"github.com/tinygo-org/tinygo/x-tools/godoc/util"
+	"github.com/tinygo-org/tinygo/x-tools/godoc/vfs"
 )
 
 // handlerServer is a migration from an old godoc http Handler type.

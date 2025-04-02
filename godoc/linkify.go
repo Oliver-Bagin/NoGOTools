@@ -12,9 +12,9 @@ package godoc
 
 import (
 	"fmt"
-	"go/ast"
-	"go/doc"
-	"go/token"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/doc"
+	"github.com/tinygo-org/tinygo/alt_go/token"
 	"io"
 	"strconv"
 )

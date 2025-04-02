@@ -6,13 +6,13 @@ package typeutil_test
 
 import (
 	"fmt"
-	"go/ast"
-	"go/parser"
-	"go/token"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/parser"
+	"github.com/tinygo-org/tinygo/alt_go/token"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"sort"
 
-	"golang.org/x/tools/go/types/typeutil"
+	"github.com/tinygo-org/tinygo/x-tools/go/types/typeutil"
 )
 
 func ExampleMap() {

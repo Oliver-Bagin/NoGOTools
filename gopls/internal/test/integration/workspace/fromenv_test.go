@@ -9,7 +9,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	. "golang.org/x/tools/gopls/internal/test/integration"
+	. "github.com/tinygo-org/tinygo/x-tools/gopls/internal/test/integration"
 )
 
 // Test that setting go.work via environment variables or settings works.

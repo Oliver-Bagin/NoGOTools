@@ -6,8 +6,8 @@ package godoc
 
 import (
 	"bytes"
-	"go/parser"
-	"go/token"
+	"github.com/tinygo-org/tinygo/alt_go/parser"
+	"github.com/tinygo-org/tinygo/alt_go/token"
 	"strings"
 	"testing"
 )

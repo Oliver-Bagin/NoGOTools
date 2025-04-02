@@ -15,12 +15,12 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"golang.org/x/telemetry/counter"
 	"golang.org/x/telemetry/counter/countertest"
-	"golang.org/x/tools/gopls/internal/protocol"
-	"golang.org/x/tools/gopls/internal/server"
-	. "golang.org/x/tools/gopls/internal/test/integration"
-	"golang.org/x/tools/gopls/internal/test/integration/fake"
-	"golang.org/x/tools/gopls/internal/util/bug"
-	"golang.org/x/tools/internal/testenv"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/protocol"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/server"
+	. "github.com/tinygo-org/tinygo/x-tools/gopls/internal/test/integration"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/test/integration/fake"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/util/bug"
+	"github.com/tinygo-org/tinygo/x-tools/internal/testenv"
 )
 
 func TestMain(m *testing.M) {
@@ -760,9 +760,9 @@ import (
 
 	. "net/http"
 	. "runtime"
-	. "go/types"
-	. "go/parser"
-	. "go/ast"
+	. "github.com/tinygo-org/tinygo/alt_go/types"
+	. "github.com/tinygo-org/tinygo/alt_go/parser"
+	. "github.com/tinygo-org/tinygo/alt_go/ast"
 )
 
 type S struct {

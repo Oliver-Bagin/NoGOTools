@@ -14,15 +14,15 @@ package main
 import (
 	"flag"
 	"fmt"
-	"go/ast"
-	"go/parser"
-	"go/printer"
-	"go/token"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/parser"
+	"github.com/tinygo-org/tinygo/alt_go/printer"
+	"github.com/tinygo-org/tinygo/alt_go/token"
 	"log"
 	"strconv"
 	"strings"
 
-	"golang.org/x/tools/internal/fmtstr"
+	"github.com/tinygo-org/tinygo/x-tools/internal/fmtstr"
 )
 
 func main() {

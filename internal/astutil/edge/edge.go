@@ -8,7 +8,7 @@ package edge
 
 import (
 	"fmt"
-	"go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
 	"reflect"
 )
 

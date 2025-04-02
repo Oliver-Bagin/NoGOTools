@@ -12,13 +12,13 @@ package astutil_test
 import (
 	"bytes"
 	"fmt"
-	"go/ast"
-	"go/parser"
-	"go/token"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/parser"
+	"github.com/tinygo-org/tinygo/alt_go/token"
 	"strings"
 	"testing"
 
-	"golang.org/x/tools/go/ast/astutil"
+	"github.com/tinygo-org/tinygo/x-tools/go/ast/astutil"
 )
 
 // pathToString returns a string containing the concrete types of the

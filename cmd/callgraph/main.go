@@ -4,7 +4,7 @@
 
 // callgraph: a tool for reporting the call graph of a Go program.
 // See Usage for details, or run with -help.
-package main // import "golang.org/x/tools/cmd/callgraph"
+package main // import "github.com/tinygo-org/tinygo/x-tools/cmd/callgraph"
 
 // TODO(adonovan):
 //
@@ -23,20 +23,20 @@ import (
 	"bytes"
 	"flag"
 	"fmt"
-	"go/token"
+	"github.com/tinygo-org/tinygo/alt_go/token"
 	"io"
 	"os"
 	"runtime"
 	"text/template"
 
-	"golang.org/x/tools/go/callgraph"
-	"golang.org/x/tools/go/callgraph/cha"
-	"golang.org/x/tools/go/callgraph/rta"
-	"golang.org/x/tools/go/callgraph/static"
-	"golang.org/x/tools/go/callgraph/vta"
-	"golang.org/x/tools/go/packages"
-	"golang.org/x/tools/go/ssa"
-	"golang.org/x/tools/go/ssa/ssautil"
+	"github.com/tinygo-org/tinygo/x-tools/go/callgraph"
+	"github.com/tinygo-org/tinygo/x-tools/go/callgraph/cha"
+	"github.com/tinygo-org/tinygo/x-tools/go/callgraph/rta"
+	"github.com/tinygo-org/tinygo/x-tools/go/callgraph/static"
+	"github.com/tinygo-org/tinygo/x-tools/go/callgraph/vta"
+	"github.com/tinygo-org/tinygo/x-tools/go/packages"
+	"github.com/tinygo-org/tinygo/x-tools/go/ssa"
+	"github.com/tinygo-org/tinygo/x-tools/go/ssa/ssautil"
 )
 
 // flags

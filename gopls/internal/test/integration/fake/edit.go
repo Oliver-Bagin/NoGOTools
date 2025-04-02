@@ -5,8 +5,8 @@
 package fake
 
 import (
-	"golang.org/x/tools/gopls/internal/protocol"
-	"golang.org/x/tools/internal/diff"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/protocol"
+	"github.com/tinygo-org/tinygo/x-tools/internal/diff"
 )
 
 // NewEdit creates an edit replacing all content between the 0-based

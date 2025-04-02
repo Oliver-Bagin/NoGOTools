@@ -11,9 +11,9 @@ package inspector
 
 import (
 	"fmt"
-	"go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
 
-	"golang.org/x/tools/internal/astutil/edge"
+	"github.com/tinygo-org/tinygo/x-tools/internal/astutil/edge"
 )
 
 func walkList[N ast.Node](v *visitor, ek edge.Kind, list []N) {

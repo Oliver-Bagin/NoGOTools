@@ -6,7 +6,7 @@
 
 package main
 
-import "go/types"
+import "github.com/tinygo-org/tinygo/alt_go/types"
 
 func isAlias(obj *types.TypeName) bool {
 	return false // there are no type aliases before Go 1.9

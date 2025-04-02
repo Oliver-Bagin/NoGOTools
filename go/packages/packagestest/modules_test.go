@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"golang.org/x/tools/go/packages/packagestest"
+	"github.com/tinygo-org/tinygo/x-tools/go/packages/packagestest"
 )
 
 func TestModulesExport(t *testing.T) {

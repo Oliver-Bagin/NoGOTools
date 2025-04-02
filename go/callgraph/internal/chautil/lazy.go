@@ -7,10 +7,10 @@
 package chautil
 
 import (
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 
-	"golang.org/x/tools/go/ssa"
-	"golang.org/x/tools/go/types/typeutil"
+	"github.com/tinygo-org/tinygo/x-tools/go/ssa"
+	"github.com/tinygo-org/tinygo/x-tools/go/types/typeutil"
 )
 
 // LazyCallees returns a function that maps a call site (in a function in fns)

@@ -10,12 +10,12 @@ package gcimporter_test
 import (
 	"bytes"
 	"fmt"
-	"go/ast"
-	"go/constant"
-	goimporter "go/importer"
-	goparser "go/parser"
-	"go/token"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/constant"
+	goimporter "github.com/tinygo-org/tinygo/alt_go/importer"
+	goparser "github.com/tinygo-org/tinygo/alt_go/parser"
+	"github.com/tinygo-org/tinygo/alt_go/token"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"os"
 	"os/exec"
 	"path"
@@ -27,9 +27,9 @@ import (
 	"testing"
 	"time"
 
-	"golang.org/x/tools/internal/gcimporter"
-	"golang.org/x/tools/internal/goroot"
-	"golang.org/x/tools/internal/testenv"
+	"github.com/tinygo-org/tinygo/x-tools/internal/gcimporter"
+	"github.com/tinygo-org/tinygo/x-tools/internal/goroot"
+	"github.com/tinygo-org/tinygo/x-tools/internal/testenv"
 )
 
 func TestMain(m *testing.M) {
@@ -128,7 +128,7 @@ func testImportTestdata(t *testing.T) {
 	defer os.RemoveAll(tmpdir)
 
 	packageFiles := map[string]string{}
-	for _, pkg := range []string{"go/ast", "go/token"} {
+	for _, pkg := range []string{"github.com/tinygo-org/tinygo/alt_go/ast", "github.com/tinygo-org/tinygo/alt_go/token"} {
 		export, _, err := gcimporter.FindPkg(pkg, "testdata")
 		if export == "" {
 			t.Fatalf("no export data found for %s: %s", pkg, err)
@@ -151,7 +151,7 @@ func testImportTestdata(t *testing.T) {
 		// For now, we just test the presence of a few packages
 		// that we know are there for sure.
 		got := fmt.Sprint(pkg.Imports())
-		wants := []string{"go/ast", "go/token", "go/ast"}
+		wants := []string{"github.com/tinygo-org/tinygo/alt_go/ast", "github.com/tinygo-org/tinygo/alt_go/token", "github.com/tinygo-org/tinygo/alt_go/ast"}
 		for _, want := range wants {
 			if !strings.Contains(got, want) {
 				t.Errorf(`Package("exports").Imports() = %s, does not contain %s`, got, want)
@@ -396,12 +396,12 @@ var importedObjectTests = []struct {
 }{
 	// non-interfaces
 	{"crypto.Hash", "type Hash uint"},
-	{"go/ast.ObjKind", "type ObjKind int"},
-	{"go/types.Qualifier", "type Qualifier func(*Package) string"},
-	{"go/types.Comparable", "func Comparable(T Type) bool"},
+	{"github.com/tinygo-org/tinygo/alt_go/ast.ObjKind", "type ObjKind int"},
+	{"github.com/tinygo-org/tinygo/alt_go/types.Qualifier", "type Qualifier func(*Package) string"},
+	{"github.com/tinygo-org/tinygo/alt_go/types.Comparable", "func Comparable(T Type) bool"},
 	{"math.Pi", "const Pi untyped float"},
 	{"math.Sin", "func Sin(x float64) float64"},
-	{"go/ast.NotNilFilter", "func NotNilFilter(_ string, v reflect.Value) bool"},
+	{"github.com/tinygo-org/tinygo/alt_go/ast.NotNilFilter", "func NotNilFilter(_ string, v reflect.Value) bool"},
 
 	// interfaces
 	{"context.Context", "type Context interface{Deadline() (deadline time.Time, ok bool); Done() <-chan struct{}; Err() error; Value(key any) any}"},
@@ -409,8 +409,8 @@ var importedObjectTests = []struct {
 	{"encoding.BinaryMarshaler", "type BinaryMarshaler interface{MarshalBinary() (data []byte, err error)}"},
 	{"io.Reader", "type Reader interface{Read(p []byte) (n int, err error)}"},
 	{"io.ReadWriter", "type ReadWriter interface{Reader; Writer}"},
-	{"go/ast.Node", "type Node interface{End() go/token.Pos; Pos() go/token.Pos}"},
-	{"go/types.Type", "type Type interface{String() string; Underlying() Type}"},
+	{"github.com/tinygo-org/tinygo/alt_go/ast.Node", "type Node interface{End() go/token.Pos; Pos() go/token.Pos}"},
+	{"github.com/tinygo-org/tinygo/alt_go/types.Type", "type Type interface{String() string; Underlying() Type}"},
 }
 
 func TestImportedTypes(t *testing.T) {
@@ -613,7 +613,7 @@ func TestIssue13898(t *testing.T) {
 
 	// import go/internal/gcimporter which imports go/types partially
 	imports := make(map[string]*types.Package)
-	_, err := gcimporter.Import(token.NewFileSet(), imports, "go/internal/gcimporter", ".", nil)
+	_, err := gcimporter.Import(token.NewFileSet(), imports, "github.com/tinygo-org/tinygo/alt_go/internal/gcimporter", ".", nil)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -621,30 +621,30 @@ func TestIssue13898(t *testing.T) {
 	// look for go/types package
 	var goTypesPkg *types.Package
 	for path, pkg := range imports {
-		if path == "go/types" {
+		if path == "github.com/tinygo-org/tinygo/alt_go/types" {
 			goTypesPkg = pkg
 			break
 		}
 	}
 	if goTypesPkg == nil {
-		t.Fatal("go/types not found")
+		t.Fatal("github.com/tinygo-org/tinygo/alt_go/types not found")
 	}
 
 	// look for go/types.Object type
 	obj := lookupObj(t, goTypesPkg.Scope(), "Object")
 	typ, ok := types.Unalias(obj.Type()).(*types.Named)
 	if !ok {
-		t.Fatalf("go/types.Object type is %v; wanted named type", typ)
+		t.Fatalf("github.com/tinygo-org/tinygo/alt_go/types.Object type is %v; wanted named type", typ)
 	}
 
 	// lookup go/types.Object.Pkg method
 	m, index, indirect := types.LookupFieldOrMethod(typ, false, nil, "Pkg")
 	if m == nil {
-		t.Fatalf("go/types.Object.Pkg not found (index = %v, indirect = %v)", index, indirect)
+		t.Fatalf("github.com/tinygo-org/tinygo/alt_go/types.Object.Pkg not found (index = %v, indirect = %v)", index, indirect)
 	}
 
 	// the method must belong to go/types
-	if m.Pkg().Path() != "go/types" {
+	if m.Pkg().Path() != "github.com/tinygo-org/tinygo/alt_go/types" {
 		t.Fatalf("found %v; want go/types", m.Pkg())
 	}
 }

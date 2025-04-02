@@ -6,9 +6,9 @@ package typesinternal
 
 import (
 	"fmt"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 
-	"golang.org/x/tools/go/types/typeutil"
+	"github.com/tinygo-org/tinygo/x-tools/go/types/typeutil"
 )
 
 // ForEachElement calls f for type T and each type reachable from its

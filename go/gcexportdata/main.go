@@ -11,13 +11,13 @@ package main
 import (
 	"flag"
 	"fmt"
-	"go/token"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/token"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"log"
 	"os"
 
-	"golang.org/x/tools/go/gcexportdata"
-	"golang.org/x/tools/go/types/typeutil"
+	"github.com/tinygo-org/tinygo/x-tools/go/gcexportdata"
+	"github.com/tinygo-org/tinygo/x-tools/go/types/typeutil"
 )
 
 var packageFlag = flag.String("package", "", "alternative package to print")

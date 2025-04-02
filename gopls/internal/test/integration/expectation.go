@@ -13,9 +13,9 @@ import (
 	"strings"
 
 	"github.com/google/go-cmp/cmp"
-	"golang.org/x/tools/gopls/internal/protocol"
-	"golang.org/x/tools/gopls/internal/server"
-	"golang.org/x/tools/gopls/internal/util/constraints"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/protocol"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/server"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/util/constraints"
 )
 
 var (

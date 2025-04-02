@@ -11,15 +11,15 @@ package commandmeta
 
 import (
 	"fmt"
-	"go/ast"
-	"go/token"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/token"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"reflect"
 	"strings"
 	"unicode"
 
-	"golang.org/x/tools/go/ast/astutil"
-	"golang.org/x/tools/go/packages"
+	"github.com/tinygo-org/tinygo/x-tools/go/ast/astutil"
+	"github.com/tinygo-org/tinygo/x-tools/go/packages"
 	// (does not depend on gopls itself)
 )
 
@@ -52,7 +52,7 @@ func Load() ([]*Command, error) {
 			Mode:       packages.NeedTypes | packages.NeedTypesInfo | packages.NeedSyntax | packages.NeedImports | packages.NeedDeps,
 			BuildFlags: []string{"-tags=generate"},
 		},
-		"golang.org/x/tools/gopls/internal/protocol/command",
+		"github.com/tinygo-org/tinygo/x-tools/gopls/internal/protocol/command",
 	)
 	if err != nil {
 		return nil, fmt.Errorf("packages.Load: %v", err)

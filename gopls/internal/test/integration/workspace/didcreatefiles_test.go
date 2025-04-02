@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"testing"
 
-	. "golang.org/x/tools/gopls/internal/test/integration"
+	. "github.com/tinygo-org/tinygo/x-tools/gopls/internal/test/integration"
 )
 
 // TestAutoFillPackageDecl tests that creation of a new .go file causes

@@ -7,7 +7,7 @@
 package inspector
 
 import (
-	"go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
 	"iter"
 )
 

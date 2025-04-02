@@ -3,12 +3,12 @@
 // license that can be found in the LICENSE file.
 
 // Package astutil contains common utilities for working with the Go AST.
-package astutil // import "golang.org/x/tools/go/ast/astutil"
+package astutil // import "github.com/tinygo-org/tinygo/x-tools/go/ast/astutil"
 
 import (
 	"fmt"
-	"go/ast"
-	"go/token"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/token"
 	"strconv"
 	"strings"
 )

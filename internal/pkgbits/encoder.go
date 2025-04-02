@@ -8,7 +8,7 @@ import (
 	"bytes"
 	"crypto/md5"
 	"encoding/binary"
-	"go/constant"
+	"github.com/tinygo-org/tinygo/alt_go/constant"
 	"io"
 	"math/big"
 	"runtime"

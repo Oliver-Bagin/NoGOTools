@@ -4,7 +4,7 @@
 
 package analysis
 
-import "go/token"
+import "github.com/tinygo-org/tinygo/alt_go/token"
 
 // A Diagnostic is a message associated with a source location or range.
 //

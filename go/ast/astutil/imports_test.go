@@ -6,10 +6,10 @@ package astutil
 
 import (
 	"bytes"
-	"go/ast"
-	"go/format"
-	"go/parser"
-	"go/token"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/format"
+	"github.com/tinygo-org/tinygo/alt_go/parser"
+	"github.com/tinygo-org/tinygo/alt_go/token"
 	"reflect"
 	"strconv"
 	"testing"
@@ -842,12 +842,12 @@ import (
 type I int
 `)
 	// The AddImport order here matters.
-	AddImport(fset, file, "golang.org/x/tools/go/ast/astutil")
+	AddImport(fset, file, "github.com/tinygo-org/tinygo/x-tools/go/ast/astutil")
 	AddImport(fset, file, "os")
 	want := `package main
 
 import (
-	"golang.org/x/tools/go/ast/astutil"
+	"github.com/tinygo-org/tinygo/x-tools/go/ast/astutil"
 	"os"
 )
 
@@ -1048,7 +1048,7 @@ import (
 	"os"
 	"utf8"
 
-	"go/format"
+	"github.com/tinygo-org/tinygo/alt_go/format"
 )
 `,
 		out: `package main
@@ -1059,7 +1059,7 @@ import (
 	"os"
 	"utf8"
 
-	"go/format"
+	"github.com/tinygo-org/tinygo/alt_go/format"
 )
 `,
 	},
@@ -1075,7 +1075,7 @@ import (
 	"os"   // c
 	"utf8" // d
 
-	"go/format" // e
+	"github.com/tinygo-org/tinygo/alt_go/format" // e
 )
 `,
 		out: `package main
@@ -1087,7 +1087,7 @@ import (
 	"os"   // c
 	"utf8" // d
 
-	"go/format" // e
+	"github.com/tinygo-org/tinygo/alt_go/format" // e
 )
 `,
 	},

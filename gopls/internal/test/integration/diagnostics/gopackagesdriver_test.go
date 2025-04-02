@@ -7,7 +7,7 @@ package diagnostics
 import (
 	"testing"
 
-	. "golang.org/x/tools/gopls/internal/test/integration"
+	. "github.com/tinygo-org/tinygo/x-tools/gopls/internal/test/integration"
 )
 
 // Test that the import error does not mention GOPATH when building with
@@ -33,7 +33,7 @@ import "mod.com/hello"
 		env.AfterChange(
 			Diagnostics(
 				env.AtRegexp("a.go", `"mod.com`),
-				WithMessage("go/packages driver"),
+				WithMessage("github.com/tinygo-org/tinygo/alt_go/packages driver"),
 			),
 		)
 		// Deleting the import removes the error.

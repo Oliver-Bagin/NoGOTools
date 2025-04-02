@@ -6,8 +6,8 @@ package completion
 
 import (
 	"context"
-	"go/ast"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 )
 
 // builtinArgKind determines the expected object kind for a builtin

@@ -7,8 +7,8 @@ package usesgenerics_test
 import (
 	"testing"
 
-	"golang.org/x/tools/go/analysis/analysistest"
-	"golang.org/x/tools/go/analysis/passes/usesgenerics"
+	"github.com/tinygo-org/tinygo/x-tools/go/analysis/analysistest"
+	"github.com/tinygo-org/tinygo/x-tools/go/analysis/passes/usesgenerics"
 )
 
 func Test(t *testing.T) {

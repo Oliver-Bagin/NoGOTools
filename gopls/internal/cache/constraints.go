@@ -5,10 +5,10 @@
 package cache
 
 import (
-	"go/ast"
-	"go/build/constraint"
-	"go/parser"
-	"go/token"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/build/constraint"
+	"github.com/tinygo-org/tinygo/alt_go/parser"
+	"github.com/tinygo-org/tinygo/alt_go/token"
 )
 
 // isStandaloneFile reports whether a file with the given contents should be

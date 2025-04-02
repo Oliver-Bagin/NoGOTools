@@ -8,7 +8,7 @@
 package gccgoimporter
 
 import (
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"runtime"
 	"testing"
 )
@@ -73,14 +73,14 @@ var importablePackages = [...]string{
 	"expvar",
 	"flag",
 	"fmt",
-	"go/ast",
-	"go/build",
-	"go/doc",
-	// "go/format", // Added in GCC 4.8.
-	"go/parser",
-	"go/printer",
-	"go/scanner",
-	"go/token",
+	"github.com/tinygo-org/tinygo/alt_go/ast",
+	"github.com/tinygo-org/tinygo/alt_go/build",
+	"github.com/tinygo-org/tinygo/alt_go/doc",
+	// "github.com/tinygo-org/tinygo/alt_go/format", // Added in GCC 4.8.
+	"github.com/tinygo-org/tinygo/alt_go/parser",
+	"github.com/tinygo-org/tinygo/alt_go/printer",
+	"github.com/tinygo-org/tinygo/alt_go/scanner",
+	"github.com/tinygo-org/tinygo/alt_go/token",
 	"hash/adler32",
 	"hash/crc32",
 	"hash/crc64",

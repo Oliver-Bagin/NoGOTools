@@ -16,7 +16,7 @@ import (
 	"os"
 	"strings"
 
-	"golang.org/x/tools/present"
+	"github.com/tinygo-org/tinygo/x-tools/present"
 )
 
 var (

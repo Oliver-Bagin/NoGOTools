@@ -12,9 +12,9 @@ import (
 	"log"
 	"slices"
 
-	"golang.org/x/tools/gopls/internal/protocol"
-	"golang.org/x/tools/gopls/internal/protocol/command"
-	"golang.org/x/tools/internal/tool"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/protocol"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/protocol/command"
+	"github.com/tinygo-org/tinygo/x-tools/internal/tool"
 )
 
 // execute implements the LSP ExecuteCommand verb for gopls.

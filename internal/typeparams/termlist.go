@@ -8,7 +8,7 @@ package typeparams
 
 import (
 	"bytes"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 )
 
 // A termlist represents the type set represented by the union

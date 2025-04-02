@@ -21,8 +21,8 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"go/format"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/format"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"io/fs"
 	"log"
 	"os"
@@ -33,7 +33,7 @@ import (
 	"slices"
 	"strings"
 
-	"golang.org/x/tools/go/packages"
+	"github.com/tinygo-org/tinygo/x-tools/go/packages"
 )
 
 func main() {

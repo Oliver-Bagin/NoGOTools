@@ -10,9 +10,9 @@ package loader_test
 
 import (
 	"fmt"
-	"go/build"
-	"go/constant"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/build"
+	"github.com/tinygo-org/tinygo/alt_go/constant"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"os"
 	"path/filepath"
 	"reflect"
@@ -22,9 +22,9 @@ import (
 	"sync"
 	"testing"
 
-	"golang.org/x/tools/go/buildutil"
-	"golang.org/x/tools/go/loader"
-	"golang.org/x/tools/internal/testenv"
+	"github.com/tinygo-org/tinygo/x-tools/go/buildutil"
+	"github.com/tinygo-org/tinygo/x-tools/go/loader"
+	"github.com/tinygo-org/tinygo/x-tools/internal/testenv"
 )
 
 func TestMain(m *testing.M) {
@@ -842,7 +842,7 @@ func TestCgoCwdIssue46877(t *testing.T) {
 	testenv.NeedsTool(t, "go")
 	testenv.NeedsTool(t, "cgo")
 	var conf loader.Config
-	conf.Import("golang.org/x/tools/go/loader/testdata/issue46877")
+	conf.Import("github.com/tinygo-org/tinygo/x-tools/go/loader/testdata/issue46877")
 	if _, err := conf.Load(); err != nil {
 		t.Errorf("Load failed: %v", err)
 	}

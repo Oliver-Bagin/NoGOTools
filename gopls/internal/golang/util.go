@@ -6,20 +6,20 @@ package golang
 
 import (
 	"context"
-	"go/ast"
-	"go/printer"
-	"go/token"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/printer"
+	"github.com/tinygo-org/tinygo/alt_go/token"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"regexp"
 	"strings"
 	"unicode"
 
-	"golang.org/x/tools/gopls/internal/cache"
-	"golang.org/x/tools/gopls/internal/cache/metadata"
-	"golang.org/x/tools/gopls/internal/cache/parsego"
-	"golang.org/x/tools/gopls/internal/protocol"
-	"golang.org/x/tools/gopls/internal/util/bug"
-	"golang.org/x/tools/internal/tokeninternal"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/cache"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/cache/metadata"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/cache/parsego"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/protocol"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/util/bug"
+	"github.com/tinygo-org/tinygo/x-tools/internal/tokeninternal"
 )
 
 // IsGenerated reads and parses the header of the file denoted by uri
@@ -49,8 +49,8 @@ func adjustedObjEnd(obj types.Object) token.Pos {
 		// identifier in the import spec with the local package name.
 		//
 		// For example:
-		// 		import "go/ast" 	// name "ast" matches package name
-		// 		import a "go/ast"  	// name "a" does not match package name
+		// 		import "github.com/tinygo-org/tinygo/alt_go/ast" 	// name "ast" matches package name
+		// 		import a "github.com/tinygo-org/tinygo/alt_go/ast"  	// name "a" does not match package name
 		//
 		// When the identifier does not appear in the source, have the range
 		// of the object be the import path, including quotes.

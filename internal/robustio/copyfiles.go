@@ -14,9 +14,9 @@ package main
 
 import (
 	"bytes"
-	"go/build/constraint"
-	"go/scanner"
-	"go/token"
+	"github.com/tinygo-org/tinygo/alt_go/build/constraint"
+	"github.com/tinygo-org/tinygo/alt_go/scanner"
+	"github.com/tinygo-org/tinygo/alt_go/token"
 	"log"
 	"os"
 	"path/filepath"

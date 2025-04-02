@@ -42,12 +42,12 @@
 //
 // * os.Exit is implemented using panic, causing deferred functions to
 // run.
-package interp // import "golang.org/x/tools/go/ssa/interp"
+package interp // import "github.com/tinygo-org/tinygo/x-tools/go/ssa/interp"
 
 import (
 	"fmt"
-	"go/token"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/token"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"log"
 	"os"
 	"reflect"
@@ -56,8 +56,8 @@ import (
 	"sync/atomic"
 	_ "unsafe"
 
-	"golang.org/x/tools/go/ssa"
-	"golang.org/x/tools/internal/typeparams"
+	"github.com/tinygo-org/tinygo/x-tools/go/ssa"
+	"github.com/tinygo-org/tinygo/x-tools/internal/typeparams"
 )
 
 type continuation int

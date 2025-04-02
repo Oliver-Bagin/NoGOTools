@@ -4,7 +4,7 @@
 
 package astutil
 
-import "go/ast"
+import "github.com/tinygo-org/tinygo/alt_go/ast"
 
 // Unparen returns e with any enclosing parentheses stripped.
 // Deprecated: use [ast.Unparen].

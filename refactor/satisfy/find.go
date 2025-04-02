@@ -11,7 +11,7 @@
 // THIS PACKAGE IS EXPERIMENTAL AND MAY CHANGE AT ANY TIME.
 //
 // It is provided only for the gopls tool. It requires well-typed inputs.
-package satisfy // import "golang.org/x/tools/refactor/satisfy"
+package satisfy // import "github.com/tinygo-org/tinygo/x-tools/refactor/satisfy"
 
 // NOTES:
 //
@@ -39,12 +39,12 @@ package satisfy // import "golang.org/x/tools/refactor/satisfy"
 
 import (
 	"fmt"
-	"go/ast"
-	"go/token"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/token"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 
-	"golang.org/x/tools/go/types/typeutil"
-	"golang.org/x/tools/internal/typeparams"
+	"github.com/tinygo-org/tinygo/x-tools/go/types/typeutil"
+	"github.com/tinygo-org/tinygo/x-tools/internal/typeparams"
 )
 
 // A Constraint records the fact that the RHS type does and must

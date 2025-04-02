@@ -7,7 +7,7 @@ package completion
 import (
 	"testing"
 
-	. "golang.org/x/tools/gopls/internal/test/integration"
+	. "github.com/tinygo-org/tinygo/x-tools/gopls/internal/test/integration"
 )
 
 func TestPackageCompletionCrash_Issue68169(t *testing.T) {

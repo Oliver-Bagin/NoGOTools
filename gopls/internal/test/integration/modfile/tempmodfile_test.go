@@ -7,7 +7,7 @@ package modfile
 import (
 	"testing"
 
-	. "golang.org/x/tools/gopls/internal/test/integration"
+	. "github.com/tinygo-org/tinygo/x-tools/gopls/internal/test/integration"
 )
 
 // This test replaces an older, problematic test (golang/go#57784). But it has

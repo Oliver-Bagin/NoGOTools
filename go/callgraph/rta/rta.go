@@ -35,16 +35,16 @@
 // reachable, the code of that function is analyzed for more call sites,
 // address-taken functions, and runtime types.  The process continues
 // until a fixed point is reached.
-package rta // import "golang.org/x/tools/go/callgraph/rta"
+package rta // import "github.com/tinygo-org/tinygo/x-tools/go/callgraph/rta"
 
 import (
 	"fmt"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"hash/crc32"
 
-	"golang.org/x/tools/go/callgraph"
-	"golang.org/x/tools/go/ssa"
-	"golang.org/x/tools/go/types/typeutil"
+	"github.com/tinygo-org/tinygo/x-tools/go/callgraph"
+	"github.com/tinygo-org/tinygo/x-tools/go/ssa"
+	"github.com/tinygo-org/tinygo/x-tools/go/types/typeutil"
 )
 
 // A Result holds the results of Rapid Type Analysis, which includes the

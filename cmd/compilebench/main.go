@@ -134,11 +134,11 @@ type runner interface {
 var tests = []test{
 	{"BenchmarkTemplate", compile{"html/template"}},
 	{"BenchmarkUnicode", compile{"unicode"}},
-	{"BenchmarkGoTypes", compile{"go/types"}},
+	{"BenchmarkGoTypes", compile{"github.com/tinygo-org/tinygo/alt_go/types"}},
 	{"BenchmarkCompiler", compile{"cmd/compile/internal/gc"}},
 	{"BenchmarkSSA", compile{"cmd/compile/internal/ssa"}},
 	{"BenchmarkFlate", compile{"compress/flate"}},
-	{"BenchmarkGoParser", compile{"go/parser"}},
+	{"BenchmarkGoParser", compile{"github.com/tinygo-org/tinygo/alt_go/parser"}},
 	{"BenchmarkReflect", compile{"reflect"}},
 	{"BenchmarkTar", compile{"archive/tar"}},
 	{"BenchmarkXML", compile{"encoding/xml"}},

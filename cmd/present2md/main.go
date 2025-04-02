@@ -32,7 +32,7 @@ import (
 	"unicode"
 	"unicode/utf8"
 
-	"golang.org/x/tools/present"
+	"github.com/tinygo-org/tinygo/x-tools/present"
 )
 
 func usage() {

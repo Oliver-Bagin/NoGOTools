@@ -7,7 +7,7 @@ package httpmux
 import (
 	"testing"
 
-	"golang.org/x/tools/go/analysis/analysistest"
+	"github.com/tinygo-org/tinygo/x-tools/go/analysis/analysistest"
 )
 
 func Test(t *testing.T) {

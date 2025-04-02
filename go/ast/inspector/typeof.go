@@ -10,7 +10,7 @@ package inspector
 // see https://go-review.googlesource.com/c/tools/+/135655/1/go/ast/inspector/inspector.go#196
 
 import (
-	"go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
 	"math"
 
 	_ "unsafe"

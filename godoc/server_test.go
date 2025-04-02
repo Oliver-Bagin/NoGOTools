@@ -5,7 +5,7 @@
 package godoc
 
 import (
-	"go/doc"
+	"github.com/tinygo-org/tinygo/alt_go/doc"
 	"net/http"
 	"net/http/httptest"
 	"net/url"
@@ -14,7 +14,7 @@ import (
 	"testing"
 	"text/template"
 
-	"golang.org/x/tools/godoc/vfs/mapfs"
+	"github.com/tinygo-org/tinygo/x-tools/godoc/vfs/mapfs"
 )
 
 // TestIgnoredGoFiles tests the scenario where a folder has no .go or .c files,

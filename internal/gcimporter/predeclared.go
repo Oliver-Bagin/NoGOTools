@@ -5,7 +5,7 @@
 package gcimporter
 
 import (
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"sync"
 )
 

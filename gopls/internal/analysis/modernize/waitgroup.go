@@ -6,17 +6,17 @@ package modernize
 
 import (
 	"fmt"
-	"go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
 	"slices"
 
-	"golang.org/x/tools/go/analysis"
-	"golang.org/x/tools/go/analysis/passes/inspect"
-	"golang.org/x/tools/go/ast/inspector"
-	"golang.org/x/tools/go/types/typeutil"
-	"golang.org/x/tools/internal/analysisinternal"
-	typeindexanalyzer "golang.org/x/tools/internal/analysisinternal/typeindex"
-	"golang.org/x/tools/internal/astutil/cursor"
-	"golang.org/x/tools/internal/typesinternal/typeindex"
+	"github.com/tinygo-org/tinygo/x-tools/go/analysis"
+	"github.com/tinygo-org/tinygo/x-tools/go/analysis/passes/inspect"
+	"github.com/tinygo-org/tinygo/x-tools/go/ast/inspector"
+	"github.com/tinygo-org/tinygo/x-tools/go/types/typeutil"
+	"github.com/tinygo-org/tinygo/x-tools/internal/analysisinternal"
+	typeindexanalyzer "github.com/tinygo-org/tinygo/x-tools/internal/analysisinternal/typeindex"
+	"github.com/tinygo-org/tinygo/x-tools/internal/astutil/cursor"
+	"github.com/tinygo-org/tinygo/x-tools/internal/typesinternal/typeindex"
 )
 
 // The waitgroup pass replaces old more complex code with

@@ -7,20 +7,20 @@ package golang
 import (
 	"context"
 	"fmt"
-	"go/ast"
-	"go/token"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/token"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"strconv"
 	"strings"
 
-	astutil "golang.org/x/tools/go/ast/astutil"
-	"golang.org/x/tools/gopls/internal/cache"
-	"golang.org/x/tools/gopls/internal/file"
-	"golang.org/x/tools/gopls/internal/protocol"
-	goplsastutil "golang.org/x/tools/gopls/internal/util/astutil"
-	internalastutil "golang.org/x/tools/internal/astutil"
-	"golang.org/x/tools/internal/event"
-	"golang.org/x/tools/internal/fmtstr"
+	astutil "github.com/tinygo-org/tinygo/x-tools/go/ast/astutil"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/cache"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/file"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/protocol"
+	goplsastutil "github.com/tinygo-org/tinygo/x-tools/gopls/internal/util/astutil"
+	internalastutil "github.com/tinygo-org/tinygo/x-tools/internal/astutil"
+	"github.com/tinygo-org/tinygo/x-tools/internal/event"
+	"github.com/tinygo-org/tinygo/x-tools/internal/fmtstr"
 )
 
 func Highlight(ctx context.Context, snapshot *cache.Snapshot, fh file.Handle, position protocol.Position) ([]protocol.DocumentHighlight, error) {

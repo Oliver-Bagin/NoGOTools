@@ -8,14 +8,14 @@ package typesinternal
 
 import (
 	"fmt"
-	"go/ast"
-	"go/token"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/token"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"reflect"
 	"strings"
 	"unsafe"
 
-	"golang.org/x/tools/internal/aliases"
+	"github.com/tinygo-org/tinygo/x-tools/internal/aliases"
 )
 
 func SetUsesCgo(conf *types.Config) bool {

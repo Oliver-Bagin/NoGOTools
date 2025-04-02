@@ -57,10 +57,10 @@ package vta
 // TODO(zpavlinovic): update VTA for how it handles generic function bodies and instantiation wrappers.
 
 import (
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 
-	"golang.org/x/tools/go/callgraph"
-	"golang.org/x/tools/go/ssa"
+	"github.com/tinygo-org/tinygo/x-tools/go/callgraph"
+	"github.com/tinygo-org/tinygo/x-tools/go/ssa"
 )
 
 // CallGraph uses the VTA algorithm to compute call graph for all functions

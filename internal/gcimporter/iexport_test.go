@@ -9,21 +9,21 @@ package gcimporter_test
 import (
 	"bytes"
 	"fmt"
-	"go/ast"
-	"go/constant"
-	"go/parser"
-	"go/token"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/constant"
+	"github.com/tinygo-org/tinygo/alt_go/parser"
+	"github.com/tinygo-org/tinygo/alt_go/token"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"math/big"
 	"path/filepath"
 	"reflect"
 	"strings"
 	"testing"
 
-	"golang.org/x/tools/go/gcexportdata"
-	"golang.org/x/tools/go/packages"
-	"golang.org/x/tools/internal/gcimporter"
-	"golang.org/x/tools/internal/testenv"
+	"github.com/tinygo-org/tinygo/x-tools/go/gcexportdata"
+	"github.com/tinygo-org/tinygo/x-tools/go/packages"
+	"github.com/tinygo-org/tinygo/x-tools/internal/gcimporter"
+	"github.com/tinygo-org/tinygo/x-tools/internal/testenv"
 )
 
 func iexport(fset *token.FileSet, version int, pkg *types.Package) ([]byte, error) {

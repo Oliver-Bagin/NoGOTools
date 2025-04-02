@@ -8,9 +8,9 @@ package shift
 // Used for skipping shift checks on unreachable arch-specific code.
 
 import (
-	"go/ast"
-	"go/constant"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/constant"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 )
 
 // updateDead puts unreachable "if" and "case" nodes into dead.

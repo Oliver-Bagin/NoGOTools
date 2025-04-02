@@ -7,17 +7,17 @@
 //
 // This package comment will evolve over time as this package splits
 // into smaller pieces.
-package godoc // import "golang.org/x/tools/godoc"
+package godoc // import "github.com/tinygo-org/tinygo/x-tools/godoc"
 
 import (
 	"bufio"
 	"bytes"
 	"fmt"
-	"go/ast"
-	"go/doc"
-	"go/format"
-	"go/printer"
-	"go/token"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/doc"
+	"github.com/tinygo-org/tinygo/alt_go/format"
+	"github.com/tinygo-org/tinygo/alt_go/printer"
+	"github.com/tinygo-org/tinygo/alt_go/token"
 	htmltemplate "html/template"
 	"io"
 	"log"

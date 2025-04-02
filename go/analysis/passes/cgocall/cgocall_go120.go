@@ -6,7 +6,7 @@
 
 package cgocall
 
-import "go/types"
+import "github.com/tinygo-org/tinygo/alt_go/types"
 
 func setGoVersion(tc *types.Config, pkg *types.Package) {
 	// no types.Package.GoVersion until Go 1.21

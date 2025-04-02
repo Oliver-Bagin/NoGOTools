@@ -5,7 +5,7 @@
 package typesinternal
 
 import (
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 )
 
 // ReceiverNamed returns the named type (if any) associated with the

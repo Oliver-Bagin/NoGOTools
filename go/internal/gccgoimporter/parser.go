@@ -12,16 +12,16 @@ import (
 	"bytes"
 	"errors"
 	"fmt"
-	"go/constant"
-	"go/token"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/constant"
+	"github.com/tinygo-org/tinygo/alt_go/token"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"io"
 	"strconv"
 	"strings"
 	"text/scanner"
 	"unicode/utf8"
 
-	"golang.org/x/tools/internal/typesinternal"
+	"github.com/tinygo-org/tinygo/x-tools/internal/typesinternal"
 )
 
 type parser struct {

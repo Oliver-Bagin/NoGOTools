@@ -10,23 +10,23 @@ package importgraph_test
 
 import (
 	"fmt"
-	"go/build"
+	"github.com/tinygo-org/tinygo/alt_go/build"
 	"os"
 	"sort"
 	"strings"
 	"testing"
 
-	"golang.org/x/tools/internal/packagestest"
-	"golang.org/x/tools/refactor/importgraph"
+	"github.com/tinygo-org/tinygo/x-tools/internal/packagestest"
+	"github.com/tinygo-org/tinygo/x-tools/refactor/importgraph"
 
 	_ "crypto/hmac" // just for test, below
 )
 
-const this = "golang.org/x/tools/refactor/importgraph"
+const this = "github.com/tinygo-org/tinygo/x-tools/refactor/importgraph"
 
 func TestBuild(t *testing.T) {
 	exported := packagestest.Export(t, packagestest.GOPATH, []packagestest.Module{
-		{Name: "golang.org/x/tools/refactor/importgraph", Files: packagestest.MustCopyFileTree(".")}})
+		{Name: "github.com/tinygo-org/tinygo/x-tools/refactor/importgraph", Files: packagestest.MustCopyFileTree(".")}})
 	defer exported.Cleanup()
 
 	var gopath string
@@ -122,7 +122,7 @@ func TestBuild(t *testing.T) {
 	// Test direct edges.
 	// We throw in crypto/hmac to prove that external test files
 	// (such as this one) are inspected.
-	for _, p := range []string{"go/build", "testing", "crypto/hmac"} {
+	for _, p := range []string{"github.com/tinygo-org/tinygo/alt_go/build", "testing", "crypto/hmac"} {
 		if !forward[this][p] {
 			printNode("forward", this)
 			t.Errorf("forward[%q][%q] not found", this, p)

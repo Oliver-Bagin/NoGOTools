@@ -4,7 +4,7 @@
 
 // Package redirect provides hooks to register HTTP handlers that redirect old
 // godoc paths to their new equivalents.
-package redirect // import "golang.org/x/tools/godoc/redirect"
+package redirect // import "github.com/tinygo-org/tinygo/x-tools/godoc/redirect"
 
 import (
 	"net/http"

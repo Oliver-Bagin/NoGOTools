@@ -4,7 +4,7 @@
 
 package typeutil
 
-import "go/types"
+import "github.com/tinygo-org/tinygo/alt_go/types"
 
 // Dependencies returns all dependencies of the specified packages.
 //

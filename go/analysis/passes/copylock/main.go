@@ -9,8 +9,8 @@
 package main
 
 import (
-	"golang.org/x/tools/go/analysis/passes/copylock"
-	"golang.org/x/tools/go/analysis/singlechecker"
+	"github.com/tinygo-org/tinygo/x-tools/go/analysis/passes/copylock"
+	"github.com/tinygo-org/tinygo/x-tools/go/analysis/singlechecker"
 )
 
 func main() { singlechecker.Main(copylock.Analyzer) }

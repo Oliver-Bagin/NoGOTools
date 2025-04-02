@@ -9,12 +9,12 @@ package gen
 import (
 	"bytes"
 	"fmt"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"log"
 	"text/template"
 
-	"golang.org/x/tools/gopls/internal/protocol/command/commandmeta"
-	"golang.org/x/tools/internal/imports"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/protocol/command/commandmeta"
+	"github.com/tinygo-org/tinygo/x-tools/internal/imports"
 )
 
 const src = `// Copyright 2024 The Go Authors. All rights reserved.
@@ -109,7 +109,7 @@ func Generate() ([]byte, error) {
 	if err != nil {
 		return nil, fmt.Errorf("loading command data: %v", err)
 	}
-	const thispkg = "golang.org/x/tools/gopls/internal/protocol/command"
+	const thispkg = "github.com/tinygo-org/tinygo/x-tools/gopls/internal/protocol/command"
 	qual := func(p *types.Package) string {
 		if p.Path() == thispkg {
 			return ""
@@ -156,7 +156,7 @@ func Generate() ([]byte, error) {
 		Imports: map[string]bool{
 			"context": true,
 			"fmt":     true,
-			"golang.org/x/tools/gopls/internal/protocol": true,
+			"github.com/tinygo-org/tinygo/x-tools/gopls/internal/protocol": true,
 		},
 	}
 	for _, c := range d.Commands {

@@ -6,7 +6,7 @@ package completion
 
 import (
 	"context"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"strings"
 	"time"
 )

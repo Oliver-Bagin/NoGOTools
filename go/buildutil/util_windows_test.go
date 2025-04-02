@@ -6,13 +6,13 @@ package buildutil_test
 
 import (
 	"fmt"
-	"go/build"
+	"github.com/tinygo-org/tinygo/alt_go/build"
 	"path/filepath"
 	"runtime"
 	"strings"
 	"testing"
 
-	"golang.org/x/tools/go/buildutil"
+	"github.com/tinygo-org/tinygo/x-tools/go/buildutil"
 )
 
 func testContainingPackageCaseFold(file, want string) error {

@@ -6,7 +6,7 @@ package typeparams
 
 import (
 	"fmt"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 )
 
 // CoreType returns the core type of T or nil if T does not have a core type.

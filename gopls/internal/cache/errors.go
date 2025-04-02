@@ -11,23 +11,23 @@ package cache
 import (
 	"context"
 	"fmt"
-	"go/parser"
-	"go/scanner"
-	"go/token"
+	"github.com/tinygo-org/tinygo/alt_go/parser"
+	"github.com/tinygo-org/tinygo/alt_go/scanner"
+	"github.com/tinygo-org/tinygo/alt_go/token"
 	"path/filepath"
 	"regexp"
 	"strconv"
 	"strings"
 
-	"golang.org/x/tools/go/packages"
-	"golang.org/x/tools/gopls/internal/cache/metadata"
-	"golang.org/x/tools/gopls/internal/cache/parsego"
-	"golang.org/x/tools/gopls/internal/file"
-	"golang.org/x/tools/gopls/internal/protocol"
-	"golang.org/x/tools/gopls/internal/protocol/command"
-	"golang.org/x/tools/gopls/internal/settings"
-	"golang.org/x/tools/gopls/internal/util/bug"
-	"golang.org/x/tools/internal/typesinternal"
+	"github.com/tinygo-org/tinygo/x-tools/go/packages"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/cache/metadata"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/cache/parsego"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/file"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/protocol"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/protocol/command"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/settings"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/util/bug"
+	"github.com/tinygo-org/tinygo/x-tools/internal/typesinternal"
 )
 
 // goPackagesErrorDiagnostics translates the given go/packages Error into a
@@ -365,7 +365,7 @@ func onlyDeletions(fixes []SuggestedFix) bool {
 }
 
 func typesCodeHref(linkTarget string, code typesinternal.ErrorCode) string {
-	return BuildLink(linkTarget, "golang.org/x/tools/internal/typesinternal", code.String())
+	return BuildLink(linkTarget, "github.com/tinygo-org/tinygo/x-tools/internal/typesinternal", code.String())
 }
 
 // BuildLink constructs a URL with the given target, path, and anchor.

@@ -13,10 +13,10 @@ import (
 	"runtime"
 	"testing"
 
-	"golang.org/x/tools/go/analysis"
-	"golang.org/x/tools/go/analysis/multichecker"
-	"golang.org/x/tools/go/analysis/passes/findcall"
-	"golang.org/x/tools/internal/testenv"
+	"github.com/tinygo-org/tinygo/x-tools/go/analysis"
+	"github.com/tinygo-org/tinygo/x-tools/go/analysis/multichecker"
+	"github.com/tinygo-org/tinygo/x-tools/go/analysis/passes/findcall"
+	"github.com/tinygo-org/tinygo/x-tools/internal/testenv"
 )
 
 func main() {

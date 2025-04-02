@@ -6,7 +6,7 @@
 
 package main
 
-import "go/types"
+import "github.com/tinygo-org/tinygo/alt_go/types"
 
 func init() {
 	register("source", sourceImporter{})

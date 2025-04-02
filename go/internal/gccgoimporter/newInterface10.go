@@ -6,7 +6,7 @@
 
 package gccgoimporter
 
-import "go/types"
+import "github.com/tinygo-org/tinygo/alt_go/types"
 
 func newInterface(methods []*types.Func, embeddeds []types.Type) *types.Interface {
 	named := make([]*types.Named, len(embeddeds))

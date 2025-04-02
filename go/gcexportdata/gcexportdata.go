@@ -66,12 +66,12 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
-	"go/token"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/token"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 	"io"
 	"os/exec"
 
-	"golang.org/x/tools/internal/gcimporter"
+	"github.com/tinygo-org/tinygo/x-tools/internal/gcimporter"
 )
 
 // Find returns the name of an object (.o) or archive (.a) file

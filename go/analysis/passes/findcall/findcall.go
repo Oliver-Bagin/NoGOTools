@@ -12,10 +12,10 @@ package findcall
 
 import (
 	"fmt"
-	"go/ast"
-	"go/types"
+	"github.com/tinygo-org/tinygo/alt_go/ast"
+	"github.com/tinygo-org/tinygo/alt_go/types"
 
-	"golang.org/x/tools/go/analysis"
+	"github.com/tinygo-org/tinygo/x-tools/go/analysis"
 )
 
 const Doc = `find calls to a particular function

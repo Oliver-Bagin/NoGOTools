@@ -7,8 +7,8 @@ package rename
 import (
 	"bytes"
 	"fmt"
-	"go/build"
-	"go/token"
+	"github.com/tinygo-org/tinygo/alt_go/build"
+	"github.com/tinygo-org/tinygo/alt_go/token"
 	"os"
 	"os/exec"
 	"path/filepath"
@@ -17,9 +17,9 @@ import (
 	"strings"
 	"testing"
 
-	"golang.org/x/tools/go/buildutil"
-	"golang.org/x/tools/internal/aliases"
-	"golang.org/x/tools/internal/testenv"
+	"github.com/tinygo-org/tinygo/x-tools/go/buildutil"
+	"github.com/tinygo-org/tinygo/x-tools/internal/aliases"
+	"github.com/tinygo-org/tinygo/x-tools/internal/testenv"
 )
 
 // TODO(adonovan): test reported source positions, somehow.

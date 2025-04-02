@@ -15,14 +15,14 @@ import (
 
 	"golang.org/x/mod/semver"
 	"golang.org/x/sync/errgroup"
-	"golang.org/x/tools/go/packages"
-	"golang.org/x/tools/gopls/internal/cache/metadata"
-	"golang.org/x/tools/gopls/internal/protocol"
-	"golang.org/x/tools/gopls/internal/vulncheck"
-	"golang.org/x/tools/gopls/internal/vulncheck/govulncheck"
-	"golang.org/x/tools/gopls/internal/vulncheck/osv"
-	isem "golang.org/x/tools/gopls/internal/vulncheck/semver"
-	"golang.org/x/tools/internal/memoize"
+	"github.com/tinygo-org/tinygo/x-tools/go/packages"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/cache/metadata"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/protocol"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/vulncheck"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/vulncheck/govulncheck"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/vulncheck/osv"
+	isem "github.com/tinygo-org/tinygo/x-tools/gopls/internal/vulncheck/semver"
+	"github.com/tinygo-org/tinygo/x-tools/internal/memoize"
 	"golang.org/x/vuln/scan"
 )
 

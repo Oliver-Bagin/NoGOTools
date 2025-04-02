@@ -9,15 +9,15 @@ package goasm
 import (
 	"context"
 	"fmt"
-	"go/token"
+	"github.com/tinygo-org/tinygo/alt_go/token"
 
-	"golang.org/x/tools/gopls/internal/cache"
-	"golang.org/x/tools/gopls/internal/cache/metadata"
-	"golang.org/x/tools/gopls/internal/file"
-	"golang.org/x/tools/gopls/internal/protocol"
-	"golang.org/x/tools/gopls/internal/util/asm"
-	"golang.org/x/tools/gopls/internal/util/morestrings"
-	"golang.org/x/tools/internal/event"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/cache"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/cache/metadata"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/file"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/protocol"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/util/asm"
+	"github.com/tinygo-org/tinygo/x-tools/gopls/internal/util/morestrings"
+	"github.com/tinygo-org/tinygo/x-tools/internal/event"
 )
 
 // Definition handles the textDocument/definition request for Go assembly files.
