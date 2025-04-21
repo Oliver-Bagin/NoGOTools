@@ -762,6 +762,33 @@ func (b *builder) expr0(fn *Function, e ast.Expr, tv types.TypeAndValue) Value {
 			panic("illegal op in BinaryExpr: " + e.Op.String())
 		}
 
+	case *ast.TernaryExpr:
+		thenBlock := fn.newBasicBlock("ternary.then")
+		elseBlock := fn.newBasicBlock("ternary.else")
+		mergeBlock := fn.newBasicBlock("ternary.merge")
+
+		// Exit condition
+		b.cond(fn, e.X, thenBlock, elseBlock)
+
+		// then branch
+		fn.currentBlock = thenBlock
+		thenVal := b.expr(fn, e.Y)
+		emitJump(fn, mergeBlock)
+
+		// else branch
+		fn.currentBlock = elseBlock
+		elseVal := b.expr(fn, e.Z)
+		emitJump(fn, mergeBlock)
+
+		fn.currentBlock = mergeBlock
+		phi := &Phi{
+			Edges:   []Value{thenVal, elseVal},
+			Comment: "ternary",
+		}
+		phi.pos = e.OpPos
+		phi.typ = fn.typ(tv.Type)
+		return mergeBlock.emit(phi)
+
 	case *ast.SliceExpr:
 		var low, high, max Value
 		var x Value
